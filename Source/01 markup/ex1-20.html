@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>표</title>
+    <style>
+        table{
+            width: 60%;
+            border-collapse: collapse;
+
+
+/* 중앙정렬*/
+margin : 0 auto ;
+
+        }
+        td,th{
+            border: 1px solid #000;
+             /* padding : border에서 글자 사이의 간격*/
+            padding : 10px ;   
+        } 
+
+
+
+    </style>
+</head>
+<body>   
+    <table>
+       <thead>
+             <tr>            
+                <th class =n1>교과목</th> <!--중앙에 정렬이 되면서 굵어짐 -->
+                <th class = n1>점수</th>                                                                                          
+                <th>점수</th>          
+            </tr>
+        </thead>
+        <tbody>
+            <tr>          
+                <th>HTML</th>
+                <td>93</td>                
+            </tr>
+            <tr>          
+                <th>CSS</th>
+                <td>92</td>         
+            </tr>
+        </tbody> 
+        <tfoot>
+            <tr>           
+                <th>평균</th>
+                <td>92.5</td>          
+            </tr>
+        </tfoot>       
+    </table>
+    <div> 클래스 속성</div>
+</body>
+</html>
