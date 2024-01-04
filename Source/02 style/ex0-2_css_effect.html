@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS의 효과</title>
+
+    <style>
+
+        .cal {
+            width: 500 px;
+            height: 700px;
+            background-color: rgb(160, 210, 210);
+            
+        }
+
+
+        .d1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(248, 198, 215);
+            margin: 20px;
+
+            /* border-radius 사각형의 네 모퉁이를 둥글게 처리함*/
+            border-radius: 50px;  
+
+            /* float : 블락태그의 빈공간을 왼쪽을 기주으로 채움 */
+            float : left ;  
+
+            /*그림자 속성 ( -(마이너스)도 가능 )
+                수평거리(필수)  수직거리(필수)  번짐정도(필수X) 색깔(필수X) 외부효과(필수X) 
+            */
+            box-shadow: -5px 10px 15px rgb(139, 72, 95) ;
+
+        }
+
+        .d2 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(248, 198, 215);
+            margin: 20px;
+            border-radius: 50px;  
+            float : left ; 
+            box-shadow: -5px 10px 15px rgb(139, 72, 95) ;
+
+        }
+
+
+        .clear{
+            float : both;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class = "cal">
+
+    <div class="d1"> </div> <!-- block이기 때문에 밑으로 다 떨어짐-->
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+
+    <div class ="clear"> </div>
+
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+
+    <div class ="clear"> </div>
+
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+
+    <div class ="clear"> </div>
+
+    <div class="d2"> </div>
+    <div class="d1"> </div>
+    <div class="d1"> </div>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t시멘트릭 태그 -> HTML 에서 레이아웃 잡는 태그 </title>
+
+    <style>
+
+        #container {
+            border : 1px solid rgb(99, 95, 95);
+            width : 85% ;
+            height: 900px;
+            margin : 0 auto ;
+        }
+
+        header {
+            border : 1px solid salmon;
+            height: 100PX;  /*width는 100%*/
+        }
+
+        footer {
+            border : 1px solid salmon;
+            height: 100PX;  /*width는 100%*/  
+        }
+
+        main {
+            border : 1px solid salmon;
+            height: 700PX;  /*width는 100%*/  
+        }
+       
+        #t1 tr td {
+            border : 1px solid skyblue;
+            height: 99px;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <!-- 전체 레이아웃-->
+    <div id = "container">
+     <!-- 시멘트릭 태그로 만듦 ( <div>와 역할은 같지만 시멘트릭 태그를 사용하면 google에서 더 노출이 가능하다. )-->
+    
+    <header> 
+        <table id ="t1">
+            <tr>
+                <td width ="300px"></td>
+                <td width ="600px"></td>
+                <td width ="300px"></td>
+            </tr>
+        </table>
+
+    </header>
+    <main></main>
+    <footer></footer>
+    </div>
+</body>
+</html>

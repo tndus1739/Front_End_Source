@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블락 태그 vs 인라인 태그 </title>
+    <style> 
+        .d1 {
+            /* 블락 태그 
+            - 언애 있는 내용에 따라서 width와 height가 자동 조절
+            <br>을 넣지 않아도 알아서 간격 조절
+            */ 
+            border : 1px solid red ; 
+            width : 300px ; 
+            height : 100px ; 
+
+            float : left ;   /*float : 밑에 있는 박스가 위로 끌어올려짐
+                              float 속성을 적용하고 나서는 반드시 clear 적용
+                              적용을 하지 않으면 모든 요소들이 다 끌어올려짐  */
+
+            margin : 30px ;  
+            padding : 30px ;   
+
+        } 
+        .s1 {/* 인라인태그 -->  width와 height를 지정해놔도 작동이 안됨
+            
+            <br>을 넣어서 밑줄에 가게끔 처리
+            */ 
+            border : 1px solid red ; 
+            width : 700px ; 
+            height : 100px ; 
+
+            margin : 30px ; 
+            padding : 30px ; 
+
+
+        }  
+
+        .clear {
+
+            clear : both ;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2> 블록 태그 </h2>
+    <hr> 
+    <div class = "d1"> div 는 블락 태그 입니다. </div>
+    <div class = "d1"> div 는 블락 태그 입니다. </div>
+    
+    <div class = "clear"> </div>
+    
+    <h2> 인라인 태그 </h2>
+    <hr> 
+    <br> <br>
+    <span class ="s1"> span은 인라인 태그 입니다.  </span>
+    <span class ="s1"> span은 인라인 태그 입니다. </span>
+    
+</body>
+</html>

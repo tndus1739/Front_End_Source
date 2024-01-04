@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 레이아웃 1</title>
+
+    <style>
+
+        #container {
+            border : 1px solid gray ;
+            width : 1200px ;  /* % : 반응형으로 자동으로 크기 조절  px : 크기 고정*/
+            height: 850px;       /*개발끝나면 height 제거 , 아직 내용물이 없어서 넣어놓은 것 */
+            margin : 0 auto ;    /*중앙 정렬*/
+        }
+
+        #container > div {              /*"container"의 직계 자식 "header","main","footer"3개에 적용*/
+
+            border: 1px solid pink;
+        }
+
+        #header {
+            height: 150px;
+        }
+        #main {
+            height: 550px;
+        }
+        #footer {
+            height: 150px;
+        }
+
+        #header > div {
+            border : 1px solid rgb(254, 163, 7) ;
+        }
+        .d1 , .d3 {             /*  , (콤마) - 동시적용 */
+            width : 20%;
+            height: 150px;
+            float: left ;
+        }
+
+        .d2 {
+            width : 59%;     /*border간격도 생각을 해줘야한다.border의 굵기가 있어서 밑으로 떨어져 버린다. */
+            height: 150px;
+            float : left ;
+        }
+
+        .clear {
+            float: both;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!-- 전체 페이지 레이아웃 -->
+    <div id = "container">
+
+         <!-- header 블락 -->
+        <div id ="header"> 
+
+            <div class = "d1"></div>
+            <div class = "d2"></div>
+            <div class = "d3"></div>
+            <div class = "clear"></div>
+
+
+        </div>
+
+        <!-- main 블락 -->
+        <div id ="main"> </div>
+
+        <!-- footer 블락 -->
+        <div id ="footer"> </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t시멘트릭 태그 -> HTML 에서 레이아웃 잡는 태그 </title>
+
+    <style>
+
+        #container {
+            border : 1px solid rgb(99, 95, 95);
+            width : 85% ;
+            height: 900px;
+            margin : 0 auto ;
+        }
+
+        header {
+            border : 1px solid salmon;
+            height: 100PX;  /*width는 100%*/
+        }
+
+        footer {
+            border : 1px solid salmon;
+            height: 100PX;  /*width는 100%*/  
+        }
+
+        
+       
+        #t1 tr td {
+            border : 1px solid skyblue;
+            height: 99px;
+        }
+
+        aside {
+            border : 1px solid rgb(81, 184, 145);
+            width: 20%;
+            float :left ;
+            height: 690px;
+            background-color: rgb(192, 219, 239);
+        }
+
+        main {
+            border : 1px solid purple;
+            width: 78%;
+            height: 690PX;  /*width는 100%*/  
+            background-color: rgb(217, 185, 185);
+
+            margin-left: 21%; /*margin값으로 20%를 밀어냈다.*/
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    
+    <!-- 전체 레이아웃-->
+    <div id = "container">
+     <!-- 시멘트릭 태그로 만듦 ( <div>와 역할은 같지만 시멘트릭 태그를 사용하면 google에서 더 노출이 가능하다. )-->
+    
+    <header> 
+        <table id ="t1">
+            <tr>
+                <td width ="300px"></td>
+                <td width ="600px"></td>
+                <td width ="300px"></td>
+            </tr>
+        </table>
+    </header>
+    <aside class ="c1"> aside</aside>  <!-- 둘다 div -->
+    <main class = "c2"> main</main>  <!-- 둘다 div-->
+
+    <!-- clear-->
+    <div class ="clear"></div>
+    
+    <footer></footer>
+    </div>
+</body>
+</html>

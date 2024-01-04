@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블락, 인라인, 인라인 블락 으로 변환 </title>
+    <style> 
+    /* 인라인 블가 : 인라인, 블락 2가지 속성을 모두 가지는 것*/
+
+        .d1 {
+            border : 1px solid red ; 
+            display : inline ; 
+            width : 700px ; 
+            height : 100px; 
+        }  
+        .s1 {
+            border : 1px solid red; 
+            display : block ; 
+            width : 200px ; 
+            height : 200px ; 
+        }
+        .ib1 {
+            border : 1px solid red; 
+            display : inline-block; 
+            width : 200px ; 
+            height: 200px ; 
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h2> 블락 => 인라인 변환 </h2>
+    <hr> 
+    <div class = "d1"> div는 블락 태그 입니다. 1</div>
+    <div class = "d1"> div는 블락 태그 입니다. 2</div>
+    <div class = "d1"> div는 블락 태그 입니다. 3</div>
+
+    <hr> 
+    <h2> 인라인 => 블락 으로 변환 </h2>
+    <hr> 
+    <span class = "s1"> span는 인라인 입니다. 1</span>
+    <span class = "s1"> span는 인라인 입니다. 2</span>
+    <span class = "s1"> span는 인라인 입니다. 3</span>
+
+    <hr> 
+    <h2> 인라인, 블락 ===> 인라인 블락으로 변환 </h2>
+    <hr> 
+    <div class="ib1"> div는 블락 태그 입니다. 1  </div>
+    <div class="ib1"> div는 블락 태그 입니다. 2  </div>
+    <div class="ib1"> div는 블락 태그 입니다. 3  </div>
+    <hr> 
+    <sapn class="ib1"> span 는 인라인 태그 입니다. 1 </sapn>
+    <sapn class="ib1"> span 는 인라인 태그 입니다. 2 </sapn>
+    <sapn class="ib1"> span 는 인라인 태그 입니다. 3 </sapn>
+
+
+
+    
+</body>
+</html>
