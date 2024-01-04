@@ -12,18 +12,43 @@
             width: 500 px;
             height: 700px;
             background-color: rgb(160, 210, 210);
-            
+            margin : auto ;
+            font-style: normal;
+            font-size: 50px;
+            text-align: center;
+
+           
         }
 
+        .a{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(164, 155, 188);
+            margin : 15px ;
+            border-radius: 50px;
+            float: left;
+            box-shadow: 5px 5px 10px rgb(116, 116, 116) ;
+        }
 
-        .d1 {
+        .b{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 225, 148);
+            margin : 15px ;
+            border-radius: 50px;
+            float: left;
+            box-shadow: 5px 5px 10px rgb(116, 116, 116) ;
+
+
+        }
+        .c {
             width: 100px;
             height: 100px;
             background-color: rgb(248, 198, 215);
-            margin: 20px;
+            margin: 15px;
 
             /* border-radius 사각형의 네 모퉁이를 둥글게 처리함*/
-            border-radius: 50px;  
+            border-radius: 100%;  
 
             /* float : 블락태그의 빈공간을 왼쪽을 기주으로 채움 */
             float : left ;  
@@ -31,24 +56,27 @@
             /*그림자 속성 ( -(마이너스)도 가능 )
                 수평거리(필수)  수직거리(필수)  번짐정도(필수X) 색깔(필수X) 외부효과(필수X) 
             */
-            box-shadow: -5px 10px 15px rgb(139, 72, 95) ;
+            box-shadow: 5px 5px 10px rgb(116, 116, 116) ;
 
         }
 
-        .d2 {
-            width: 200px;
+
+
+
+        .d {
+            width: 230px;
             height: 100px;
             background-color: rgb(248, 198, 215);
-            margin: 20px;
+            margin: 15px;
             border-radius: 50px;  
             float : left ; 
-            box-shadow: -5px 10px 15px rgb(139, 72, 95) ;
+            box-shadow: 5px 5px 10px rgb(116, 116, 116) ;
 
         }
 
 
         .clear{
-            float : both;
+            clear : both;
         }
     </style>
 
@@ -58,30 +86,37 @@
 <body>
     <div class = "cal">
 
-    <div class="d1"> </div> <!-- block이기 때문에 밑으로 다 떨어짐-->
-    <div class="d1"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
+    <div class="a"> AC</div> <!-- block이기 때문에 밑으로 다 떨어짐-->
+    <div class="a">+/- </div>
+    <div class="a">% </div>
+    <div class="b">/</div>
 
     <div class ="clear"> </div>
 
-    <div class="d1"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
+    <div class="c">7 </div>
+    <div class="c"> 8</div>
+    <div class="c"> 9</div>
+    <div class="b">X </div>
 
     <div class ="clear"> </div>
 
-    <div class="d1"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
+    <div class="c"> 4</div>
+    <div class="c"> 5</div>
+    <div class="c"> 6</div>
+    <div class="b"> -</div>
 
     <div class ="clear"> </div>
 
-    <div class="d2"> </div>
-    <div class="d1"> </div>
-    <div class="d1"> </div>
+    <div class="c"> 1</div>
+    <div class="c"> 2</div>
+    <div class="c"> 3</div>
+    <div class="b"> +</div>
+
+    <div class ="clear"> </div>
+
+    <div class="d">0 </div>
+    <div class="c"> .</div>
+    <div class="b"> =</div>
 
 </div>
 

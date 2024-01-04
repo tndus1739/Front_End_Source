@@ -24,7 +24,10 @@
             height: 100PX;  /*width는 100%*/  
         }
 
-        
+        main {  /* main이 2개인 경우에 충돌나면 밑에꺼로 적용 , 하나로 합쳐서 적어도 됨*/
+            border : 1px solid red; 
+            height: 700px;
+           
        
         #t1 tr td {
             border : 1px solid skyblue;
@@ -69,8 +72,8 @@
     <header> 
         <table id ="t1">
             <tr>
-                <td width ="300px"></td>
-                <td width ="600px"></td>
+                <td width ="300px">  <img  src = "logo.gif" alt="RUBATO 로고" >   </td>
+                <td width ="600px"> <a</td>
                 <td width ="300px"></td>
             </tr>
         </table>
@@ -80,7 +83,7 @@
 
     <!-- clear-->
     <div class ="clear"></div>
-    
+
     <footer></footer>
     </div>
 </body>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t시멘트릭 태그 -> HTML 에서 레이아웃 잡는 태그 </title>
+
+    <style>
+        #container {
+            border: 1px solid rgb(255, 95, 95);
+            width: 80%;
+            
+            margin: 0 auto;
+        }
+
+        header {
+            border: 1px solid salmon;
+            height: 100PX;
+            /*width는 100%*/
+        }
+
+        footer {
+            border: 1px solid salmon;
+            height: 100PX;
+            /*width는 100%*/
+        }
+
+
+        #t1 tr td {
+            border: 1px solid skyblue;
+            height: 99px;
+        }
+
+        #t2 tr td {
+            border: 1px solid rgb(223, 125, 13);
+            height: 90px;
+
+        }
+
+        #t3 {
+            border: 1px solid rgb(186, 223, 77);
+            height: 140px;
+            background-color: rgb(0, 168, 171);
+        }
+
+        .ddd {
+
+            float : left ;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 10px;
+
+        }
+
+        .ddd1 {
+
+            float : left ;
+            margin-right: 50px; 
+            margin-left: 50px;
+            margin-top: 20px;
+
+        }
+      
+        main {
+            /* main이 2개인 경우에 충돌나면 밑에꺼로 적용 , 하나로 합쳐서 적어도 됨*/
+            border: 1px solid green;
+            width: 100%;
+            
+            /*width는 100%*/
+            background-color: rgba(217, 185, 185, 0.088);
+
+
+        }
+
+        #i1 {
+
+            height: 190px;
+            border: 1px solid rgb(83, 62, 178);
+            margin-top: 25px;
+        }
+
+        .c1 {
+            width: 480px;
+            height: 190px;
+            border: 1px solid rgb(202, 73, 165);
+            margin-left: 12px;
+            float: left;
+        }
+
+        .l2::marker {
+            color: rgb(0, 168, 171);
+        }
+
+        .dd {
+            border: 1px solid grey;
+            width: 100%;
+            height: 150px;
+        }
+
+        .dd .c2 {
+            float:left ; 
+            margin-right: 20px;
+        }
+       .dd .C2 ul, .dd .c2 li{
+            border: 1px solid rgb(182, 27, 27);
+            width : 180px ; 
+        }
+
+        .f1 {
+
+            color: rgb(0, 168, 171);
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .moto {
+            margin-top: 40px;
+            width: 250px;
+            height: 35px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <!-- 전체 레이아웃-->
+    <div id="container">
+        <!-- 시멘트릭 태그로 만듦 ( <div>와 역할은 같지만 시멘트릭 태그를 사용하면 google에서 더 노출이 가능하다. )-->
+
+        <header>
+            <table id="t1">
+                <tr>
+                    <td width="200px" style="padding-left: 55px;"> <img width="150px" src="img/logo.gif"
+                            alt="RUBATO 로고"> </td>
+                    <td width="800px"> <img width="270px" src="img/moto.gif" alt="moto" class="moto"> </td>
+                    <td width="320px" style="padding-left: 200px;">로그인 | 회원가입 | 사이트맵 | 회사 소개</td>
+                </tr>
+            </table>
+        </header>
+
+        <main class="m1"> <!-- 둘다 div-->
+            <table id="t2" width="1500px">
+                <tr>
+                    <td width="250px" style="padding-left: 10px !important;"> <img class="tt2" width="200px"
+                            src="img/menu01.gif" alt="손해보험상식"></td>
+                    <td width="250px"> <img class="tt2" width="200px" src="img/menu02.gif" alt="회사소개"></td>
+                    <td width="250px"> <img class="tt2" width="200px" src="img/menu03.gif" alt="보험상품안내"></td>
+                    <td width="250px"> <img class="tt2" width="200px" src="img/menu04.gif" alt="마이페이지"></td>
+                    <td width="250px"> <img class="tt2" width="200px" src="img/menu05.gif" alt="고객센터"></td>
+
+                </tr>
+            </table>
+            <div id="t3">
+                    <div class = "ddd1"> <img width= "310px "src="img/banner01.gif" alt="연금보험"> </div>
+                    <div class = "ddd"> <img width= "15px "src="img/banner_bar.gif" alt="배너바"> </div>
+                    <div class = "ddd"> <img width= "310px " src="img/banner02.gif" alt="내게 필요한 보험"> </div>
+                    <div class = "ddd"> <img width= "15px "src="img/banner_bar.gif" alt="배너바"> </div>
+                    <div class = "ddd1"> <img width= "290px " src="img/banner03.gif" alt="보험료 계산"></div>
+            </div>
+
+            <div class="clear"></div>
+            
+            <div id="i1">
+                <div class=c1>
+                    <img width = "100px" src = "img/title_customer.gif" alt="고객센터">
+                    <img width = "80px"src="img/more.gif" alt="더보기" style="margin-left: 250px;">
+                    <img  width = "350px"src="img/customer_phone.gif" alt="고객센터번호">
+                </div>
+                <div class=c1 style="width: 500px;">
+                    <img width = "100px" src="img/title_notice.gif" alt="공지사항">
+                    <img width = "80px" src="img/more.gif" alt="더보기" style="margin-left: 250px;">
+                    
+                    <ul>
+                        <p>새로운 상품의 출시를 알려드립니다. &nbsp;&nbsp; 2014-03-03<p>
+                        <p>새로운 상품의 출시를 알려드립니다. &nbsp;&nbsp; 2014-03-03<p>
+                        <p>새로운 상품의 출시를 알려드립니다. &nbsp;&nbsp; 2014-03-03<p>
+                        <p>새로운 상품의 출시를 알려드립니다. &nbsp;&nbsp; 2014-03-03<p>
+                    </ul>
+                
+                </div>
+                <div class=c1>
+                    <img width="360px" src="img/banner_faq.gif" alt="손해보험FAQ">
+                </div>
+            </div>
+
+            <div class="dd">
+
+                <div class="c2">
+
+                    <ul>
+                        <font class="f1"> 손해보험상식 </font>
+                        <li class="l2">손해보험이란?</li>
+                        <li class="l2">나에게 필요한 보험은?</li>
+                        <li class="l2">보험약관의 중요성</li>
+                        <li class="l2">손해보험의 특징</li>
+
+                    </ul>
+                </div>
+
+                <div class="c2">
+                    <ul>
+                        <font class="f1"> 루바토 보험의 장점 </font>
+                        <li class="l2">보험료 저렴</li>
+                        <li class="l2">신속한 처리 및 보상</li>
+                        <li class="l2">만기 시 원리금 보장</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="c2">
+                    <ul>
+                        <font class="f1"> 고객센터 </font>
+                        <li class="l2">전국 지점 안내</li>
+                        <li class="l2">손해배상 안내</li>
+                        <li class="l2">손해보험FAQ</li>
+                        <li class="l2">질문과 답변</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="c2">
+                    <ul>
+                        <font class="f1"> 마이페이지 </font>
+                        <li class="l2">계약 조회/변경</li>
+                        <li class="l2">보험 계약 갱신</li>
+                        <li class="l2">보험료 납입</li>
+                        <li class="l2">증명서 발급</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="c2">
+                    <ul>
+                        <font class="f1"> 가입 안내 </font>
+                        <li class="l2">공인인증센터</li>
+                        <li class="l2">인증서 발급/갱신</li>
+                        <li class="l2">인증서 폐기</li>
+                        <li class="l2">웹 로그인</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="c2">
+                    <ul>
+                        <font class="f1"> 회사 소개 </font>
+                        <li class="l2">기업소개</li>
+                        <li class="l2">찾아오시는 길</li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+
+        <!-- clear-->
+        <div class="clear"></div>
+
+        <footer></footer>
+    </div>
+
+    
+</body>
+
+</html>
