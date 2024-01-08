@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 커뮤니티 - 자유 게시판 - 글 보기</title>
+    <style>
+        #wrap {
+            width: 965px;
+            height: 830px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 90px;
+        }
+
+        aside {
+            width: 205px;
+            height: 670px;
+            float: left;
+        }
+
+        main {
+            width: 760px;
+            height: 670px;
+            margin-left: 205px;
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        footer {
+            height: 75px;
+        }
+
+        #logo {
+            width: 205px;
+            height: 70px;
+            float: left;
+        }
+
+        #home {
+            width: 25%;
+            height: 23px;
+            margin-top: 10px;
+            margin-left: 73%;
+            font-size: 13px;
+            text-align: right;
+            color: rgb(110, 110, 110);
+        }
+
+        #menu {
+            width: 757px;
+            height: 38px;
+            margin-left: 206px;
+            font-size: 12px;
+            background-image: url("main_menu_bg.png");
+            color: white;
+        }
+
+        #menu div {
+            width: 146px;
+            height: 2px;
+            text-align: center;
+            padding-top: 10px;
+            float: left;
+        }
+
+        #login {
+            width: 180px;
+            height: 120px;
+            border: 1px solid #DDDDDD;
+            background-color: #F3F3F3;
+            border-radius: 10px;
+            padding-left: 7px;
+        }
+
+        #login div {
+            padding-top: 2px;
+        }
+
+        #loginbox {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-left: 2px;
+        }
+
+        #loginbtn {
+            width: 65px;
+            margin-left: 110px;
+        }
+
+        #join {
+            width: 45px;
+            float: left;
+            margin-top: 4px;
+        }
+
+        #search {
+            width: 130px;
+            margin-left: 50px;
+            margin-top: 4px;
+        }
+
+        #submenu {
+            border: 1px solid rgb(255, 255, 255);
+            margin-top: 15px;
+            width: 187px;
+            height: 320px;
+            background-color: #F3F3F3;
+            background-image: url(sub_menu_bg.png);
+        }
+
+        #submenu div {
+            width: 160px;
+            height: 234px;
+            margin: 0 auto;
+            margin-top: 74px;
+            padding-top: 10px;
+            padding-left: 28px;
+        }
+
+        #banner {
+            border: 1px solid #DDDDDD;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding-top: 7px;
+            width: 187px;
+            height: 160px;
+            text-align: center;
+        }
+
+        #title {
+            border-top: 2px solid #d3d3d3;
+            background-color: #F3F3F3;
+            width: 760px;
+            height: 30px;
+        }
+
+        #title1 {
+            margin-top: 7px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        #title2 {
+            margin-top: 7px;
+            margin-left: 530px;
+        }
+
+        #write {
+            width: 760px;
+            height: 120px;
+        }
+
+        #writelist {
+            padding-left: 10px;
+            padding-top: 25px;
+        }
+
+        #combox {
+            border-top: 2px solid #d3d3d3;
+            background-color: #F3F3F3;
+            width: 760px;
+            height: 110px;
+        }
+        #comtitle {
+            float: left;
+        }
+        #text {
+            margin-left: 150px;
+            margin-top: 15px;
+            padding-right: 12px;
+        }
+        #combox2 {
+            float: left;
+        }
+
+        #btn {
+            width: 185px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 574px;
+        }
+        #footer1 {
+            float: left;
+        }
+
+        #footerlogo {
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo"><img src="logo.png"></div>
+            <div id="home">HOME | LOGIN | JOIN | NOTICE</div>
+            <div id="menu">
+                <div style="margin-left: 10px;">자유 게시판</div>
+                <div style="margin-left: 10px;">기타 연주</div>
+                <div>공동 구매</div>
+                <div>연주회 안내</div>
+                <div>회원 게시판</div>
+            </div>
+            <div id="clear"></div>
+        </header>
+        <aside>
+            <div id="login">
+                <div style="padding-top: 13px;"><img src="ttl_login.png"></div>
+                <div id="loginbox"><input type="text" size="9" style="border: 1px solid #B4B6B3"><input type="text"
+                        size="9" style="border: 1px solid #B4B6B3"></div>
+                <div id="loginbtn"><img src="btn_login.gif"></div>
+                <div id="clear"></div>
+                <div id="join"><img src="btn_join.gif"></div>
+                <div id="search"><img src="btn_search.gif"></div>
+            </div>
+            <div id="clear"></div>
+            <div id="submenu">
+                <div id="sublist">
+                    <ur style="list-style: none; font-size: 14px; line-height: 28px;">
+                        <li>+ 자유 게시판</li>
+                        <li>+ 방명록</li>
+                        <li>+ 공지사항</li>
+                        <li>+ 등업요청</li>
+                        <li>+ 포토갤러리</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="banner1.png">
+                <img src="banner2.png">
+                <img src="banner3.png">
+            </div>
+        </aside>
+        <main>
+            <div><img src="comm.gif"></div>
+            <br>
+            <div style="font-size: 18px; color: #444444; line-height: 70%;"><b>자유 게시판</b></div>
+            <br>
+            <div id="title">
+                <div id="title1" style="font-size: 12px; width: 300px;">까스릉님의 선물인 보드카가 정말 독하네요!!!</div>
+                <div id="title2" style="font-size: 12px; width: 218px;">루바토 | 조회 : 208 | 2016-04-28 (09:20)</div>
+                <div id="clear"></div>
+            </div>
+            <div id="write">
+                <div id="writelist">
+                    <ur style="list-style: none; font-size: 12px; line-height: 16px;">
+                        <li>까스릉님 고맙습니다.</li>
+                        <li>까스릉님 고맙습니다.</li>
+                        <li>까스릉님 고맙습니다.</li>
+                        <li>까스릉님 고맙습니다.</li>
+                        <li>까스릉님 고맙습니다.</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="combox">
+                <div id="combox2">
+                    <div id="comtitle"><img src="title_comment.gif" style="margin-left: 15px; margin-top: 15px;"></div>
+                    <div id="text"><textarea style="width: 500px; height: 75px;"></textarea></div>
+                </div>
+                <div style="margin-top: 15px;"><img src="ok_ripple.gif"></div>
+                <div id="clear"></div>
+            </div>
+            <div id="btn">
+                <img src="delete.png">
+                <img src="list.png">
+                <img src="write.png">
+            </div>
+        </main>
+
+        <hr style="margin: 1px; border: 1px solid #c4c4c4" width="970px">
+
+        <footer>
+            <div id="footer1" style="width: 650px; margin-left: 205px;">
+                <div id="footerlogo" style="width: 165px; height: 70px; margin-top: 5px;">
+                    <img src="footer_logo.gif">
+                </div>
+                <div id="addr" style="width: 400px; height: 55px; margin-left: 200px; padding-top: 15px;">
+                    <ur style="font-size: 12px; line-height: 15px; list-style: none;">
+                        <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>
+                        <li>TEL : 031-123-12324 Email : email@domain.com</li>
+                        <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="sns" style="width: 81px; margin-left: 878px; padding-top: 10px;">
+                <img src="facebook.gif">
+                <img src="blog.gif">
+                <img src="twitter.gif">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

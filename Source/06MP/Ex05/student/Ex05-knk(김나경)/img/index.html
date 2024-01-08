@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 커뮤니티 - 인덱스 페이지</title>
+    <style>
+        #wrap {
+            width: 965px;
+            height: 950px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 90px;
+        }
+
+        aside {
+            width: 205px;
+            height: 770px;
+            float: left;
+        }
+
+        main {
+            width: 760px;
+            height: 770px;
+            margin-left: 205px;
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        footer {
+            height: 75px;
+        }
+
+        #logo {
+            width: 205px;
+            height: 70px;
+            float: left;
+        }
+
+        #home {
+            width: 25%;
+            height: 23px;
+            margin-top: 10px;
+            margin-left: 73%;
+            font-size: 13px;
+            text-align: right;
+            color: rgb(110, 110, 110);
+        }
+
+        #menu {
+            width: 757px;
+            height: 38px;
+            margin-left: 206px;
+            font-size: 12px;
+            background-image: url("main_menu_bg.png");
+            color: white;
+        }
+
+        #menu div {
+            width: 146px;
+            height: 2px;
+            text-align: center;
+            padding-top: 10px;
+            float: left;
+        }
+
+        #login {
+            width: 180px;
+            height: 120px;
+            border: 1px solid #DDDDDD;
+            background-color: #F3F3F3;
+            border-radius: 10px;
+            padding-left: 7px;
+        }
+
+        #login div {
+            padding-top: 2px;
+        }
+
+        #loginbox {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-left: 2px;
+        }
+
+        #loginbtn {
+            width: 65px;
+            margin-left: 110px;
+        }
+
+        #join {
+            width: 45px;
+            float: left;
+            margin-top: 4px;
+        }
+
+        #search {
+            width: 130px;
+            margin-left: 50px;
+            margin-top: 4px;
+        }
+
+        #memo {
+            margin-top: 15px;
+            width: 170px;
+            height: 124px;
+            border: 1px solid #DDDDDD;
+            background-color: #F3F3F3;
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px rgb(192, 192, 192);
+            padding-left: 17px;
+            padding-top: 10px;
+        }
+
+        li::marker {
+            color: #169BD8;
+        }
+
+        #memo_li {
+            padding-top: 5px;
+            padding-left: 8px;
+        }
+
+        #notice {
+            width: 380px;
+            height: 130px;
+        }
+
+        #board {
+            width: 380px;
+            height: 130px;
+        }
+
+        #video {
+            width: 380px;
+            height: 260px;
+            margin-left: 380px;
+        }
+
+        #nb {
+            float: left;
+        }
+
+        #nbtn {
+            float: left;
+        }
+
+        #nmore {
+            margin-left: 342px;
+        }
+
+        #nbook,
+        #nw,
+        #nwd {
+            float: left;
+
+        }
+
+        #bb {
+            float: left;
+        }
+
+        #bbtn {
+            float: left;
+        }
+
+        #bmore {
+            margin-left: 342px;
+        }
+
+        #bbook,
+        #bw,
+        #bwd {
+            float: left;
+        }
+
+        #vbtn {
+            float: left;
+        }
+
+        #vmore {
+            margin-left: 342px;
+        }
+
+        #photo {
+            height: 250px;
+        }
+
+        #pbox {
+            width: 755px;
+            height: 215px;
+            margin-top: 8px;
+            border: 2px solid #9e9e9e;
+            border-radius: 10px;
+            box-shadow: 1px 3px 4px rgb(168, 168, 168);
+        }
+
+        #pbox_1 {
+            margin-top: 30px;
+            margin-left: 45px;
+            margin-right: 45px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #pbox div {
+            font-size: 13px;
+            text-align: center;
+
+        }
+
+        #footer1 {
+            float: left;
+        }
+
+        #footerlogo {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo"><img src="logo.png"></div>
+            <div id="home">HOME | LOGIN | JOIN | NOTICE</div>
+            <div id="menu">
+                <div style="margin-left: 10px;">자유 게시판</div>
+                <div style="margin-left: 10px;">기타 연주</div>
+                <div>공동 구매</div>
+                <div>연주회 안내</div>
+                <div>회원 게시판</div>
+            </div>
+            <div id="clear"></div>
+        </header>
+
+        <aside>
+            <div id="login">
+                <div style="padding-top: 13px;"><img src="ttl_login.png"></div>
+                <div id="loginbox"><input type="text" size="9" style="border: 1px solid #B4B6B3"><input type="text"
+                        size="9" style="border: 1px solid #B4B6B3"></div>
+                <div id="loginbtn"><img src="btn_login.gif"></div>
+                <div id="clear"></div>
+                <div id="join"><img src="btn_join.gif"></div>
+                <div id="search"><img src="btn_search.gif"></div>
+            </div>
+            <div id="memo">
+                <div><img src="ttl_memo.gif"></div>
+                <hr width="155px" style="margin: 1px; border: 0.1px solid #e4e4e4">
+                <div id="memo_li">
+                    <ur style="font-size: 13px; line-height: 20px;">
+                        <li>안녕하세요!</li>
+                        <li>안녕하세요!</li>
+                        <li>안녕하세요!</li>
+                        <li>안녕하세요!</li>
+                    </ur>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <div><img src="main_img.png"></div>
+            <div id="nb">
+                <div id="notice">
+                    <div id="nbtn" style="width: 340px;"><img src="latest1.gif"></div>
+                    <div id="nmore" style="width: 31px;"><img src="more.gif"></div>
+                    <div id="clear"></div>
+                    <hr width="370x" style="margin: 1px; border: 0.1px solid #a5a5a5">
+                    <div style="padding-top: 8px;">
+                        <div id="nbook" style="width: 120px;"><img src="book_pen.gif"
+                                style="padding-left: 17px; padding-top: 8px;"></div>
+                        <div id="nw" style="width: 170px;">
+                            <ur style="font-size: 13px; line-height: 20px; list-style: none;">
+                                <li>루바토 개편과 사이트 이용...</li>
+                                <li>루바토 개편과 사이트 이용...</li>
+                                <li>루바토 개편과 사이트 이용...</li>
+                                <li>루바토 개편과 사이트 이용...</li>
+                            </ur>
+                        </div>
+                        <div id="nwd" style="width: 70px; padding-left: 15px;">
+                            <ur style="font-size: 13px; line-height: 20px; list-style: none;">
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                            </ur>
+                        </div>
+                    </div>
+                    <div id="clear"></div>
+                </div>
+                <div id="board">
+                    <div id="bbtn"><img src="latest2.gif"></div>
+                    <div id="bmore" style="width: 31px;"><img src="more.gif"></div>
+                    <div id="clear"></div>
+                    <hr width="370x" style="margin: 1px; border: 0.1px solid #a5a5a5">
+                    <div style="padding-top: 8px;">
+                        <div id="bbook" style="width: 120px;"><img src="book_pen.gif"
+                                style="padding-left: 17px; padding-top: 8px;"></div>
+                        <div id="bw" style="width: 170px;">
+                            <ur style="font-size: 13px; line-height: 20px; list-style: none;">
+                                <li>까스롱님의 선물인 보드카...</li>
+                                <li>까스롱님의 선물인 보드카...</li>
+                                <li>까스롱님의 선물인 보드카...</li>
+                                <li>까스롱님의 선물인 보드카...</li>
+                            </ur>
+                        </div>
+                        <div id="bwd" style="width: 70px; padding-left: 15px;">
+                            <ur style="font-size: 13px; line-height: 20px; list-style: none;">
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                                <li>2017-09-20</li>
+                            </ur>
+                        </div>
+                    </div>
+                    <div id="clear"></div>
+                </div>
+            </div>
+            <div id="video">
+                <div id="vbtn"><img src="latest3.gif"></div>
+                <div id="vmore" style="width: 31px;"><img src="more.gif"></div>
+                <hr width="370x" style="margin: 1px; border: 0.1px solid #a5a5a5">
+                <p align="middle">
+                    <img src="bach.jpg">
+                    <!--
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/X-Vg2Birufg?si=EzDeqMpSpA0tPSeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                -->
+                </p>
+            </div>
+            <div id="photo">
+                <div id="pbtn"><img src="latest4.gif"></div>
+                <div id="pbox">
+                    <div id="pbox_1">
+                        <div id="img1" style="width: 190px;">
+                            <img src="img1.jpg"><br>
+                            기타 페스티벌 4중주<br>
+                        </div>
+                        <div id="img2" style="width: 190px;">
+                            <img src="img1.jpg"><br>
+                            기타 페스티벌 4중주<br>
+                        </div>
+                        <div id="img2" style="width: 190px;">
+                            <img src="img1.jpg"><br>
+                            기타 페스티벌 4중주<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="clear"></div>
+        <br>
+        <hr style="margin: 1px; border: 1px solid #c4c4c4" width="970px">
+
+        <footer>
+            <div id="footer1" style="width: 650px; margin-left: 205px;">
+                <div id="footerlogo" style="width: 165px; height: 70px; margin-top: 5px;">
+                    <img src="footer_logo.gif">
+                </div>
+                <div id="addr" style="width: 400px; height: 55px; margin-left: 200px; padding-top: 15px;">
+                    <ur style="font-size: 12px; line-height: 15px; list-style: none;">
+                        <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>
+                        <li>TEL : 031-123-12324 Email : email@domain.com</li>
+                        <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="sns" style="width: 81px; margin-left: 878px; padding-top: 10px;">
+                <img src="facebook.gif">
+                <img src="blog.gif">
+                <img src="twitter.gif">
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

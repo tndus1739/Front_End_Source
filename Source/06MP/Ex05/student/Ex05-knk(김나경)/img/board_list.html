@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기타 커뮤니티 - 자유 게시판 - 글 목록</title>
+    <style>
+        #wrap {
+            width: 965px;
+            height: 830px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 90px;
+        }
+
+        aside {
+            width: 205px;
+            height: 670px;
+            float: left;
+        }
+
+        main {
+            width: 760px;
+            height: 670px;
+            margin-left: 205px;
+        }
+
+        #clear {
+            clear: both;
+        }
+
+        footer {
+            height: 75px;
+        }
+
+        #logo {
+            width: 205px;
+            height: 70px;
+            float: left;
+        }
+
+        #home {
+            width: 25%;
+            height: 23px;
+            margin-top: 10px;
+            margin-left: 73%;
+            font-size: 13px;
+            text-align: right;
+            color: rgb(110, 110, 110);
+        }
+
+        #menu {
+            width: 757px;
+            height: 38px;
+            margin-left: 206px;
+            font-size: 12px;
+            background-image: url("main_menu_bg.png");
+            color: white;
+        }
+
+        #menu div {
+            width: 146px;
+            height: 2px;
+            text-align: center;
+            padding-top: 10px;
+            float: left;
+        }
+
+        #login {
+            width: 180px;
+            height: 120px;
+            border: 1px solid #DDDDDD;
+            background-color: #F3F3F3;
+            border-radius: 10px;
+            padding-left: 7px;
+        }
+
+        #login div {
+            padding-top: 2px;
+        }
+
+        #loginbox {
+            width: 100px;
+            height: 50px;
+            float: left;
+            margin-left: 2px;
+        }
+
+        #loginbtn {
+            width: 65px;
+            margin-left: 110px;
+        }
+
+        #join {
+            width: 45px;
+            float: left;
+            margin-top: 4px;
+        }
+
+        #search {
+            width: 130px;
+            margin-left: 50px;
+            margin-top: 4px;
+        }
+
+        #submenu {
+            border: 1px solid rgb(255, 255, 255);
+            margin-top: 15px;
+            width: 187px;
+            height: 320px;
+            background-color: #F3F3F3;
+            background-image: url(sub_menu_bg.png);
+        }
+
+        #submenu div {
+            width: 160px;
+            height: 234px;
+            margin: 0 auto;
+            margin-top: 74px;
+            padding-top: 10px;
+            padding-left: 28px;
+        }
+
+        #banner {
+            border: 1px solid #DDDDDD;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding-top: 7px;
+            width: 187px;
+            height: 160px;
+            text-align: center;
+        }
+
+        #sba {
+            height: 30px;
+            margin-top: 4px;
+        }
+        #sb1 {
+            float: left;
+        }
+
+        #select {
+            width: 280px;
+            margin-left: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #list {
+            border-top: 2px solid #d3d3d3;
+            background-color: #F3F3F3;
+            width: 760px;
+            height: 30px;
+        }
+
+        #list div {
+            font-size: 12px;
+            color: #444444;
+            margin-top: 7px;
+            float: left;
+        }
+
+        #list1, #list2, #list3 {
+            border-bottom: 1px solid #DDDDDD;
+            width: 760px;
+            height: 30px;
+        }
+
+        #list1 div {
+            font-size: 12px;
+            color: #444444;
+            margin-top: 7px;
+            float: left;
+        }
+
+        #list2 div {
+            font-size: 12px;
+            color: #444444;
+            margin-top: 7px;
+            float: left;
+        }
+
+        #list3 div {
+            font-size: 12px;
+            color: #444444;
+            margin-top: 7px;
+            float: left;
+        }
+
+        #next {
+            margin-top: 20px;
+        }
+        #next1 {
+            text-align: center;
+            width: 552px;
+            float: left;
+            margin-left: 69px;
+        }
+        #lw {
+            width: 10x;
+        }
+
+
+        #footer1 {
+            float: left;
+        }
+
+        #footerlogo {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div id="logo"><img src="logo.png"></div>
+            <div id="home">HOME | LOGIN | JOIN | NOTICE</div>
+            <div id="menu">
+                <div style="margin-left: 10px;">자유 게시판</div>
+                <div style="margin-left: 10px;">기타 연주</div>
+                <div>공동 구매</div>
+                <div>연주회 안내</div>
+                <div>회원 게시판</div>
+            </div>
+            <div id="clear"></div>
+        </header>
+        <aside>
+            <div id="login">
+                <div style="padding-top: 13px;"><img src="ttl_login.png"></div>
+                <div id="loginbox"><input type="text" size="9" style="border: 1px solid #B4B6B3"><input type="text"
+                        size="9" style="border: 1px solid #B4B6B3"></div>
+                <div id="loginbtn"><img src="btn_login.gif"></div>
+                <div id="clear"></div>
+                <div id="join"><img src="btn_join.gif"></div>
+                <div id="search"><img src="btn_search.gif"></div>
+            </div>
+            <div id="clear"></div>
+            <div id="submenu">
+                <div id="sublist">
+                    <ur style="list-style: none; font-size: 14px; line-height: 28px;">
+                        <li>+ 자유 게시판</li>
+                        <li>+ 방명록</li>
+                        <li>+ 공지사항</li>
+                        <li>+ 등업요청</li>
+                        <li>+ 포토갤러리</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="banner1.png">
+                <img src="banner2.png">
+                <img src="banner3.png">
+            </div>
+        </aside>
+        <main>
+            <div><img src="comm.gif"></div>
+            <br>
+            <div style="font-size: 18px; color: #444444; line-height: 70%; margin-bottom: 10px;"><b>자유 게시판</b></div>
+            <div>
+                <hr style="margin: 1px; border: 1px solid #c4c4c4">
+            </div>
+            <div id="sba">
+                <div id="sb1" style="font-size: 12px; width: 475px; margin-top: 4px;">▷ 총 5개의 게시물이 있습니다.</div>
+                <div id="select">
+                    <img src="select_search.gif" width="55px" height="15px" style="margin-top: 5px;">
+                    <form>
+                        <select name="search">
+                            <option value="제목">제목</option>
+                            <option value="작성자">작성자</option>
+                            <option value="내용">내용</option>
+                        </select>
+                    </form>
+                    <div><input type="text" size="9" style="height: 10px;"></div>
+                    <div style="margin-top: 2px;"><img src="search_button.gif"></div>
+                    
+                </div>
+            </div>
+
+            <div id="list">
+                <div style="margin-left: 19px;"><b>번호</b></div>
+                <div style="margin-left: 265px;"><b>제목</b></div>
+                <div style="margin-left: 248px;"><b>글쓴이</b></div>
+                <div style="margin-left: 35px;"><b>일시</b></div>
+                <div style="margin-left: 35px;"><b>조회수</b></div>
+            </div>
+
+            <div id="list1">
+                <div style="margin-left: 28px;">1</div>
+                <div style="margin-left: 28px;">까스릉님의 선물인 보드카가 정말 독하네요!!!</div>
+                <div style="margin-left: 275px;">루바토</div>
+                <div style="margin-left: 16px;">2017-09-20</div>
+                <div style="margin-left: 27px;">15</div>
+            </div>
+            <div id="list2">
+                <div style="margin-left: 28px;">1</div>
+                <div style="margin-left: 28px;">까스릉님의 선물인 보드카가 정말 독하네요!!!</div>
+                <div style="margin-left: 275px;">루바토</div>
+                <div style="margin-left: 16px;">2017-09-20</div>
+                <div style="margin-left: 27px;">15</div>
+            </div>
+            <div id="list3">
+                <div style="margin-left: 28px;">1</div>
+                <div style="margin-left: 28px;">까스릉님의 선물인 보드카가 정말 독하네요!!!</div>
+                <div style="margin-left: 275px;">루바토</div>
+                <div style="margin-left: 16px;">2017-09-20</div>
+                <div style="margin-left: 27px;">15</div>
+            </div>
+
+            <div id="next">
+                <div id="next1" style="font-size: 12px; color: #444444;">◀ 이전 1 다음 ▶</div>
+                <div id="lw">
+                    <img src="list.png">
+                    <img src="write.png">
+                </div>
+            </div>
+
+        </main>
+
+        <hr style="margin: 1px; border: 1px solid #c4c4c4" width="970px">
+
+        <footer>
+            <div id="footer1" style="width: 650px; margin-left: 205px;">
+                <div id="footerlogo" style="width: 165px; height: 70px; margin-top: 5px;">
+                    <img src="footer_logo.gif">
+                </div>
+                <div id="addr" style="width: 400px; height: 55px; margin-left: 200px; padding-top: 15px;">
+                    <ur style="font-size: 12px; line-height: 15px; list-style: none;">
+                        <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>
+                        <li>TEL : 031-123-12324 Email : email@domain.com</li>
+                        <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+                    </ur>
+                </div>
+            </div>
+            <div id="sns" style="width: 81px; margin-left: 878px; padding-top: 10px;">
+                <img src="facebook.gif">
+                <img src="blog.gif">
+                <img src="twitter.gif">
+            </div>
+
+
+        </footer>
+    </div>
+</body>
+
+</html>

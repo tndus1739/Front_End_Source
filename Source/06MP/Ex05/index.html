@@ -1,339 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기타 커뮤니티 - 인덱스 페이지</title>
-
-    <style>
-        #page {
-            border: 1px solid grey;
-            width: 1554px;
-            margin: 0 auto;
-            height: 850px;
-        }
-
-        header {
-            border: 1px solid pink;
-        }
-
-        footer {
-            border: 1px solid pink;
-            height: 100px;
-
-        }
-
-        aside {
-            /*aside도 블락 , main 도 블락이어서 float을 사용해서 옆으로 끌어올려주어야 한다.*/
-            border: 1px solid rgb(53, 111, 220);
-            width: 18%;
-
-            padding: 15px;
-            float: left;
-
-        }
-
-        main {
-            /*왼쪽으로 20%정도 밀어낸다.*/
-            border: 1px solid rgb(35, 223, 176);
-            width: 80%;
-
-            background-color: rgb(237, 241, 220);
-            margin-left: 20%;
-        }
-
-        section {
-            border: 1px solid red;
-            width: 100%;
-            height: 400px;
-
-        }
-
-        .clear {
-            clear: both;
-        }
-
-
-        li {
-            list-style: none;
-
-        }
-
-        .li2 {
-            list-style-image: url(img/icon_blue.gif);
-            font-size: medium;
-            line-height: 150%;
-        }
-
-        img {
-            display: inline;
-        }
-
-        .ss {
-            margin-left: 110px;
-            font-weight: bold;
-            color: aliceblue;
-
-
-        }
-
-        #logo {
-            border: 1px solid yellow;
-            width: 20%;
-            text-align: center;
-            float: left;
-
-
-        }
-
-        #topmenu {
-            text-align: right;
-            margin-right: 15px;
-        }
-
-        #topmenu>li {
-            border: 1px solid rgb(64, 74, 192);
-            margin-right: 5px;
-            display: inline;
-        }
-
-
-        #login {
-            border: 2px solid rgb(176, 176, 176);
-            width: 85%;
-            height: 130px;
-            background-color: rgb(238, 238, 238);
-            border-radius: 10px;
-            margin-top: 10px;
-            padding: 15px;
-            box-shadow: 5px 5px 10px gray;
-
-        }
-
-        #guestbook {
-            border: 2px solid rgb(177, 177, 177);
-            width: 85%;
-            height: 150px;
-            background-color: rgb(238, 238, 238);
-            border-radius: 10px;
-            margin-top: 20px;
-            padding: 15px;
-            box-shadow: 5px 5px 10px gray;
-        }
-
-        .loginbox {
-            border: 1px solid gray;
-            width: 120px;
-            height: 25px;
-            margin-bottom: 5px;
-            margin-right: 10px;
-            background-color: rgb(255, 255, 255);
-        }
-
-
-
-        #log {
-            float: left;
-        }
-
-        .more {
-            width: 100%;
-            border-bottom: 2px solid gray;
-        }
-
-        .green {
-            /* border: 1px solid palevioletred; */
-            width: 100%;
-            height: 30px;
-            margin-left: 280px;
-            padding-top: 20px;
-
-            line-height: 2px;
-        }
-
-        .article1 {
-            border: 1px solid rgb(124, 124, 197);
-            width: 550px;
-            height: 300px;
-            float: left;
-            padding: 6px;
-            margin-left: 6px;
-        }
-
-        .article2 {
-            border: 1px solid rgb(109, 109, 194);
-            width: 450px;
-            height: 300px;
-            float: left;
-            padding: 6px;
-            margin-left: 20px;
-        }
-
-        .c1 {
-            border: 1px solid yellow;
-            width: 100%;
-            height: 150px;
-        }
-
-        .b1 {
-            border-bottom: 2px solid gray;
-            height: 32px;
-        }
-
-        .subject {
-            float: left;
-        }
-    </style>
-
-
-
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>클래식기타 커뮤니티</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
-    <div id="page">
-
-        <header>
-            <div id="logo">
-                <img width="230px" src="img/logo.png" alt="루바토 로고">
-            </div>
-
-            <div>
-                <div>
-                    <ul id="topmenu">
-                        <li> HOME |</li>
-                        <li> LOGIN |</li>
-                        <li> JOIN |</li>
-                        <li> NOTICE </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="green"
-                    style="background-image: url(img/main_menu_bg.png); background-repeat: no-repeat; background-size: 1080px 50px">
-                    <span class="ss"> 자유게시판 </span>
-                    <span class="ss"> 기타 연주 </span>
-                    <span class="ss"> 공동 구매 </span>
-                    <span class="ss"> 연주회 안내 </span>
-                    <span class="ss"> 회원게시판 </span>
-                </div>
-            </div>
-
-
-        </header>
-        <aside>
-            <div id="login">
-                <div>
-                    <img width="150px" src="img/ttl_login.png" alt="멤버로그인">
-                </div>
-                <div id="log">
-                    <div class="loginbox"></div>
-                    <div class="loginbox"></div>
-                </div>
-
-                <img width="70px" src="img/btn_login.gif" alt="로그인버튼" style="margin-top: 5px;">
-
-                <div class="clear"></div>
-
-
-                <img height="20px" src="img/btn_join.gif" ail="회원가입">
-                <img height="20px" src="img/btn_search.gif" ail="아이디, 비밀번호찾기">
-
-
-            </div>
-            <div id="guestbook">
-                <div style="border-bottom: 1px solid gray;">
-                    <img width="70px" src="img/ttl_memo.gif" alt="방명록">
-                </div>
-                <ul>
-                    <li class="li2">안녕하세요!</li>
-                    <li class="li2">안녕하세요!</li>
-                    <li class="li2">안녕하세요!</li>
-                    <li class="li2">안녕하세요!</li>
-                </ul>
-
-            </div>
-        </aside>
-        <main>
-            <section>
-                <img src="img/main_img.png" alt="메인이미지" height="360px"
-                    style="position: absolute; left: 30%; margin-top: 20px;">
-            </section>
-
-            <section>
-                <div class="article1">
-                    <div class="c1">
-                        <div class="b1">
-                            <img height="22px" src="img/latest1.gif" alt="공지사항">
-                            <span style="margin-right: 200px;"></span>
-                            <img height="25px" src="img/more.gif" alt="more">
-                        </div>
-
-                        <img width="130px" src="img/book_pen.gif" alt="book">
-                        <div style="position: relative; left: 20%; bottom: 55%;">
-                            <ul>
-                                <li> 루바토 개편과 사이트 이용 &nbsp; 2017-09-20</li>
-                                <li> 루바토 개편과 사이트 이용 &nbsp; 2017-09-20</li>
-                                <li> 루바토 개편과 사이트 이용 &nbsp; 2017-09-20</li>
-                                <li> 루바토 개편과 사이트 이용 &nbsp; 2017-09-20</li>
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-
-                    <div class="c1">
-                        <div class="b1">
-                            <img height="22px" src="img/latest2.gif" alt="자유게시판">
-                            <img height="25px" src="img/more.gif" alt="more">
-                        </div>
-
-                        <img width="130px" src="img/book_pen.gif" alt="book">
-                        <div style="position: relative; left: 20%; bottom: 55%;">
-                            <ul>
-                                <li> 까스등님의 선물인 보드카.. </li>
-                                <li> 까스등님의 선물인 보드카.. </li>
-                                <li> 까스등님의 선물인 보드카.. </li>
-                                <li> 까스등님의 선물인 보드카.. </li>
-
-                            </ul>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-                <div class="article2">
-                    <div class="b1">
-                        <img height="22px" src="img/latest3.gif" alt="Youtube">
-                        <img height="25px" src="img/more.gif" alt="more">
-
-                    </div>
-                    <img src="img/bach.jpg" alt="바흐">
-
-                </div>
-
-            </section>
-
-
-
-
-        </main>
-
-        <div class="clear"> </div>
-        <footer>
-
-
-        </footer>
-
-
-
-
+<div id="wrap">
+<header>
+  <a href="index.html"><img id="logo" src="img/logo.png"></a>
+<nav id="top_menu">
+  HOME | LOGIN | JOIN | NOTICE
+</nav>
+<nav id="main_menu">
+  <ul>
+    <li><a href="board_list.html">자유 게시판</a></li>
+    <li><a href="#">기타 연주</a></li>
+    <li><a href="#">공동 구매</a></li>
+    <li><a href="#">연주회 안내</a></li>
+    <li><a href="#">회원 게시판</a></li>
+  </ul>
+</nav>
+</header> <!-- header -->
+<aside>
+  <article id="login_box">
+    <img id="login_title" src="img/ttl_login.png">
+    <div id="input_button">
+    <ul id="login_input">
+      <li><input type="text"></li>
+      <li><input type="password"></li>
+    </ul>
+    <img id="login_btn" src="img/btn_login.gif">
+    </div> 
+    <div class="clear"></div>
+    <div id="join_search">
+      <img src="img/btn_join.gif">
+      <img src="img/btn_search.gif">
     </div>
-</body>
+  </article>
+  <article id="guestbook">
+    <div id="guestbook_title">
+      <img src="img/ttl_memo.gif">
+    </div>
+    <ul>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+    </ul>
+  </article>
+</aside>
 
+<section id="main">
+  <img src="img/main_img.png">
+  <section id="notice_free_youtube">
+    <article id="notice"> 	<!-- 공지사항 -->
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest1.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>
+      <div class="latest_content">
+        <img class="image" src="img/book_pen.gif">
+        <ul class="list">
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>								
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>		
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>	
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>				
+        </ul>							
+      </div>
+    </article>
+    <article id="free"> 	<!--자유 게시판 -->
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest2.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>
+      <div class="latest_content">
+        <img class="image" src="img/book_pen.gif">
+        <ul class="list">
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>		
+          </li>
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>		
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>	
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>								
+        </ul>							
+      </div>
+    </article>			
+    <article id="youtube">	    <!—YOUTUBE 동영상 -->		
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest3.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>				
+      <img id="youtube_img" src="img/bach.jpg">
+    </article>
+  </section> <!-- notice_free_youtube -->
+  <section id="gallery">
+    <img src="img/latest4.gif">
+    <div id="gallery_box">
+      <div id="gallery_list">
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+      </div> <!-- galley_list -->
+    </div> <!-- gallery_box -->		
+  </section> <!-- gallery -->
+</section> <!-- section main -->
+<div class="clear"></div>
+
+<footer>
+  <img id="footer_logo" src="img/footer_logo.gif">
+  <ul id="address">
+    <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>  
+    <li>TEL : 031-123-1234  Email : email@domain.com</li>
+    <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+  </ul>
+  <ul id="footer_sns">
+    <li><img src="img/facebook.gif"></li>  
+    <li><img src="img/blog.gif"></li>
+    <li><img src="img/twitter.gif"></li>
+  </ul>
+</footer> <!-- footer -->
+
+</div> <!-- wrap -->
+</body>
 </html>
