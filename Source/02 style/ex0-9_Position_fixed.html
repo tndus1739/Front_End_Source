@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position : relative , absolute , fixed</title>
+    <style>
+      .grand-parent {
+        border: 5px dotted pink;
+        height: 500px;
+        padding: 50px;
+
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .parent {
+        border: 5px dotted rgb(154, 174, 217);
+        height: 500px;
+        padding: 10px;
+      }
+      .child {
+        width: 150px;
+        height: 100px;
+        border: 3px dotted rgb(255, 219, 12);
+        border-radius: 12px;
+        background-color: rgb(188, 226, 213);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fixed {
+        position: fixed;
+        /*body를 기준값으로 잡는다. 
+        스크롤에 상관 없이 항상 위치가 고정됨*/
+        position: fixed;
+        right: 0px;
+        bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      <div class="parent">
+        <div class="child">1</div>
+
+        <div class="child fixed">2</div>
+        <div class="child">3</div>
+      </div>
+    </div>
+  </body>
+</html>
