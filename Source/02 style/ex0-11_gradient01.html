@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient : 색깔의 번짐 효과</title>
+    <style>
+      .page {
+        width: 1000px;
+      }
+      .g1 {
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .g2 {
+        width: 1000px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .grad1 {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        background: linear-gradient(
+          30deg,
+          rgb(252, 167, 181),
+          rgb(210, 182, 210),
+          rgb(255, 248, 173),
+          rgb(164, 201, 215)
+        );
+      }
+      .grad11 {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        background: linear-gradient(60deg, #85ffbd, #fffb7d);
+      }
+      .grad111 {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+        background: linear-gradient(70deg, #4158d0, #c850c0, #ffcc70);
+      }
+      .grad2 {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+
+        /*원형 그라디언트*/
+        background: radial-gradient(#3eecac, #ee74e1);
+      }
+      .grad3 {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+
+        /*원형 그라디언트*/
+        background: radial-gradient(#fbda61, #ff5acd);
+      }
+
+      .grad4 {
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+
+        /*원형 그라디언트*/
+        background: radial-gradient(#a9c9ff, #ffbbec);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h2>Gradient 효과</h2>
+
+      <h4>2색 선형 그라디언트</h4>
+      <div class="g1">
+        <div class="grad1"></div>
+        <div class="grad11"></div>
+        <div class="grad111"></div>
+      </div>
+      <h4>원형 그라디언트</h4>
+      <div class="g2">
+        <div class="grad2"></div>
+
+        <div class="grad3"></div>
+
+        <div class="grad4"></div>
+      </div>
+    </div>
+  </body>
+</html>

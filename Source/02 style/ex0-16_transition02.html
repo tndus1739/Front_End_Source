@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변화 속성 : transition</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        border-radius: 49% 41% 51% 41% / 63% 37% 46% 29%;
+        background: radial-gradient(rgb(255, 183, 230), rgb(255, 245, 177));
+        border: 2px solid rgb(255, 195, 225);
+
+        transition: width 4s, height 4s, border 4s, transform 4s, background 2s;
+      }
+
+      div:hover {
+        width: 250px;
+        height: 250px;
+        border-radius: 49% 41% 51% 41% / 63% 37% 46% 29%;
+        border: 2px solid rgb(125, 132, 173);
+        background: radial-gradient(pink, skyblue);
+        transform: rotate(340deg);
+      }
+
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(203, 252, 255);
+        margin: 10px;
+
+        /*변화 속성 : transition*/
+        transition: width 2s;
+      }
+      #box1:hover {
+        width: 300px;
+
+        background: radial-gradient(pink, skyblue);
+      }
+    </style>
+  </head>
+  <body>
+    <div>마우스를 올리면 변화가 일어납니다.</div>
+  </body>
+</html>

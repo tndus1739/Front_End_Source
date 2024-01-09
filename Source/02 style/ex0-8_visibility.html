@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility (내용을 출력 / 없앰 )</title>
+    <style>
+      .v1 {
+        border: 1pc dotted purple;
+        /* 가시성 속성 : 감춤 , 원래 자신의 박스의 위치를 유지*/
+        visibility: hidden;
+      }
+      .v1:hover {
+        visibility: visible;
+      }
+      .v2 {
+        border: 1px solid darkorchid;
+        visibility: visible;
+      }
+      .v3 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      가시성 속성 : Visibility : hidden , Visibility : Visiable - 자기공간을
+      남김
+    </h2>
+    <hr />
+    <h2>디스플레이 속성 : display : none - 자기공간을 없앰</h2>
+    <hr />
+    <br /><br /><br />
+
+    <div class="v1">
+      <img src="img/pic1.jpg" alt="" />
+    </div>
+    <div class="v2">
+      <img src="img/pic2.jpg" alt="" />
+    </div>
+    <div class="v3">
+      <img src="img/pic3.jpg" alt="" />
+    </div>
+    <div class="v2">
+      <img src="img/pic1.jpg" alt="" />
+    </div>
+  </body>
+</html>
