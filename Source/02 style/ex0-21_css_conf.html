@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css의 충돌</title>
+    <!-- 외부 파일의 스타일을 불러 들임-->
+    <link rel="stylesheet" href="external.css" />
+    <!-- 문서 내부에 스타일을 적용-->
+    <style>
+      div {
+        background-color: yellow;
+      }
+      div {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 태그 블락 내부에 적용됨-->
+    <div style = "background-color: antiquewhite;">박스1</div>
+  </body>
+</html>

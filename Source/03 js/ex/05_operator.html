@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      document.write ("<h2> 비교 연산자 </h2> <hr>")
+
+
+
+      let x = 5; // 정수
+      let y = "5"; // 문자열
+
+      let result;
+      result = x > y;
+      document.write(" x > y :" + result + "<p>");
+      
+      // x, y의 값이 같은지 비교 : type은 비교하지 않음
+      result = x == y;
+      document.write(" x == y :" + result + "<p>");
+      // x, y의 값이 같은지 비교 : type도 같은지 비교
+      result = x === y;
+      document.write(" x === y :" + result + "<p>");
+    </script>
+  </body>
+</html>

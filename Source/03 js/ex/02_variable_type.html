@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 자바 스크립트 블락 : HTML , CSS , JavaScript ( 프로그래밍)
+    </script>
+  </head>
+
+  <body>
+    <script>
+      // 변수 선언
+      var globalValue1; // 변수명에 var
+      var globalValue2; // var 생략
+  
+      globalValue2 = "문자열";
+  
+      // 함수 : 함수명 앞에 리턴 타입이 없다.
+      function abc() {
+        var locValue; // 지역변수 :
+        var globalValue3; // 지역 변수 블락에서 var를 생략하면 전역 변수가 됨
+  
+        localValue = 10;
+        globalValue = 20;
+        document.write("localValue : " + localValue + "<p>");
+        document.write("globalValue2 : " + globalValue1 + "<p>");
+      }
+  
+      // 함수호출 ( 함수는 호출해야 작동됨)
+      abc();
+      document.write ("==================<p>");
+      
+      // 전역 변수 출력
+      globalValue1 = "홍길동";
+      document.write ("globalValue1 : " + globalValue1 + "<p>");
+
+      // 로컬 변수
+        localValue = 77 ;
+        document.write("localValue : " + localValue + "<p>");
+          // let : 동일한 이름으로 재선언이 안됨
+          // 함수 블락 내부에서 선언한 것은 함수 블락에서만 작동됨
+          
+      </script>
+  </body>
+</html>

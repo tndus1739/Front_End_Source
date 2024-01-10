@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: auto;
+      }
+      td {
+        padding: 3px;
+        text-align: center;
+      }
+      table {
+        margin-top: 100px;
+        border-collapse: collapse;
+        width: 50%;
+        border: 1px solid rgb(241, 134, 134);
+      }
+    </style>
+
+    <script>
+      let tag;
+      function gogodan() {                     // html 블락에다가 집어넣는 것 
+        tag = '<table align ="center">';
+        for (let Si = 1; i <= 9; i++) {
+          tag += "<tr>";
+          tag += "<td>" + i + "단" + "</td>";
+          for (j = 1; j <= 9; j++) {
+            tag += "<td>" + i + "*" + j + "=" + i * j + "</td>";
+          }
+          tag += "</tr>";
+        }
+        tag += "</table>";
+      }
+
+
+    </script>
+  
+  
+  
+  
+  
+  
+  
+  </head>
+  
+  <body>
+    <script>
+      document.write("<table border>"); // 기존 body의 모든 내용을 지워버림
+      document.write("<tr>");
+      for (let i = 2; i <= 9; i++) {
+        document.write("<th>" + i + "단</th>");
+      }
+      document.write("</tr>");
+      document.write("<tr>");
+      for (let i = 1; i <= 9; i++) {
+        for (let j = 2; j <= 9; j++) {
+          document.write("<td>" + j + "*" + i + "=" + i * j + "</td>");
+        }
+        document.write("</tr>");
+      }
+      document.write("</table>");
+
+      
+      // 함수호출
+
+      gogodan();
+      document.write(tag);
+      console.log(tag);
+      
+    </script>
+  </body>
+
+</html>

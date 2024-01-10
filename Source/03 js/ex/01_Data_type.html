@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var : 변수에 들어오는 데이터 타입을 자동으로 처리함
+          // 복잡한 규모있는 사이트 개발시 오류 발생시 찾기 어려울 수 있음
+    // let : 변수에 들어오는 데이터 타입을 자동으로 처리하지 않음  ES6(2015)
+          // 블락
+    var num;
+    var num1;     // 선언만 된 상태 , 값이 없는 상태 
+    var obj = null ;
+
+    let abc ;
+
+    abc = true;
+
+    abc = 10 ;
+
+    num = [1,2,3]; 
+
+    num = {name: "홍길동" , age : 29};
+
+
+    document.write( typeof 100 + "<p>");
+    document.write( typeof num + "<p>");  //  typeof + 형식
+    document.write( typeof num1 + "<p>");  
+    document.write( typeof obj + "<p>");  
+    document.write( typeof abc + "<p>");  
+
+  </script>
+</body>
+</html>
