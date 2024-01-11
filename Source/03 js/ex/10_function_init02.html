@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> 자동 실행 함수 호출될때 일반 함수 호출 </h2>
+    <hr> 
+
+    <script> 
+    
+        // 다른 함수 의 위에 와야 함. 
+        // 주의 : f4, F5 <== 선언 이후에 호출 
+         (function () {
+            f3(); 
+           // f4();
+           // F5(); 
+        }) () ; 
+    
+        // 일반 함수 1 
+        function f3 () {
+            document.write (" 일반함수 1 <p> ")
+        }
+        // 무명 함수 2 
+        let f4 = function () {
+            document.write (" 일반함수 2 <p> ")
+        }
+        // 화살표 함수 3 
+        const F5 = () => {
+            document.write (" 일반함수 2 <p> ")
+        }
+
+        //위의 함수를 호출 
+        document.write("==================<p>")
+
+
+
+    
+    
+    </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 자동 실행 함수 </title>
+</head>
+<body>
+    <h2> 자동 실행 함수 : 초기에 자동으로 작동 되는 함수 (호출없이 작동) </h2>
+    <hr> 
+
+    <script> 
+        // 호출 없이 자동으로 작동 됨 : 페이지 로딩시 자동 작동 
+        // 페이지의 기본 설정 
+       ( function () {
+            document.write ("자동 실행 함수 <p>")
+        }) (); 
+    
+        // 
+        const F1 = (function () {
+            document.write("자동 실행 함수 2 <p> ")
+        }) (); 
+
+
+        // Arrow (화살표) 함수 
+        const F2 = (() => {
+            document.write ("자동 실행 함수 3 <p>")
+        })();
+
+
+    
+    </script>
+    
+</body>
+</html>

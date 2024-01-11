@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var city = ["서울", "부산", "대전"];
+
+        var joindata1 = city.join();
+        var joindata2 = city.join('-');
+        var joindata3 = city.join(' 그리고 ');
+
+        document.write("조인 결과1 : " + joindata1 + "<p/>");
+        document.write("조인 결과1 : " + joindata2 + "<p/>");
+        document.write("조인 결과2 : " + joindata3 + "<p/>");
+        document.write("일반 출력 : " + city + "<p/>");
+
+        document.write("===================================")
+
+
+        // Arrow 함수 
+        const JOIN_ARR = () => {
+            let city1 = ["서울1", "부산1", "대전1"];
+
+            for ( let i = 0 ; i < city1.length; i++){
+                document.write ( city1[i] + " ~ " ); 
+            }
+            document.write ("<p>")
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <button onclick="JOIN_ARR()"> 클릭 </button>
+
+</body>
+
+</html>

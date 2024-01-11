@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Array 객체의 생성자를 생성자에 파라미터에 값 할당. 
+        
+        var city = new Array("Seoul", "Busan", "Incheon");
+        function printArr() {
+            var i;
+            for (i = 0; i < city.length; i++) {
+                document.write("배열 데이터 [" + i + "] = " + city[i] + "<br>");
+            }
+        }
+        printArr();
+
+    </script>
+
+</body>
+
+</html>

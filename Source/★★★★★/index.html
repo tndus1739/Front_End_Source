@@ -1,38 +1,16 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="/space.js" type="text/javascript" defer></script>
 </head>
 <body>
-<p>
-  <strong>경고!</strong> 이것은 매우 위험합니다.
-</p>
-<p>
-  나는 <em>당근을</em> 사랑합니다. <br>
-  나는 당근을 <em>사랑</em> 합니다.
-</p>
-<p>
-1<sup>2</sup>
-
-1/<sub>2</sub>
-
-H<sub>2</sub>O
-</p>
-
-<p>
-  <u>u태그 입니다.</u>
-  <s>s태그 입니다.</s>
-</p>
-<p>
-  <blockquote cite=" "></blockquote>
-  &lt;b&gt;
-</p>
-<p>
-  <abbr title="Hypertext Markup Languag">HTML</abbr>을 표기한 문단입니다. 
-  소스 보기로 코드를 확인해주세요!
-</p>
-
+    {% include "./nunjucks/header.html" %}
+    <canvas id="canvas"></canvas>
+    {% include "./nunjucks/footer.html" %}
 </body>
 </html>

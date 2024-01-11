@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // slice 는 원본 배열의 내용이 유지됨 
+            // slice : 시작 방번호는 포함, 끝 방번호는 미포함 
+
+        var kdata = ['서울', '부산', '구포', '대구', '인천', '대전', '세종'];
+        
+        
+        var str1 = kdata.slice(0, 4);
+        var str2 = kdata.slice(2, -1);
+        var str3 = kdata.slice(-4, -2);
+        document.write("부분 배열1 : " + str1 + "<p/>");
+        document.write("부분 배열2 : " + str2 + "<p/>");
+        document.write("부분 배열3 : " + str3 + "<p/>")
+    </script>
+</head>
+
+<body>
+    <h2>  slice : 방번호로 값을 잘라서 저장 : 시작은 포함 끝은 미포함  </h2>
+    <hr> 
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // splice : 원본 데이타가 반영이됨 
+            // 시작 방번호 포함, 끝 방번호 포함. 
+
+        var kdata = ['서울', '부산', '구포', '대구', '대전'];
+        var str1 = kdata.splice(1, 2);
+
+        document.write("삭제 데이터 : " + str1 + "<br>");
+        document.write("남은 배열 : " + kdata + "<p/>");
+
+        var str2 = kdata.splice(1, 1, '강릉', '세종');
+        document.write("삭제 데이터 : " + str2 + "<br>");
+        document.write("남은 배열 : " + kdata + "<p/>");
+        var str3 = kdata.splice(2, Number.MAX_VALUE);
+        document.write("삭제 데이터 : " + str3 + "<br>");
+        document.write("남은 배열 : " + kdata + "<p/>")
+    </script>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
