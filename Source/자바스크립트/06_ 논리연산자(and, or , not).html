@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 논리연산자 ( OR , AND , NOT )
+      // || : OR 연산자 : 여러개 중 하나라도 true 면 true , 즉 모든값이 false일 때만 false 를 반환
+      //                  OR는 첫번째 true를 발견하는 즉시 평가를 멈춤
+
+      // && : AND 연산자 : 모든 값이 true 일때만 true , 즉 하나라도 false면 false를 반환
+      //                   AND는 첫번째 false를 발견하는 즉시 평가를 멈춤
+
+      // ! : NOT 연산자 : true면 false  , false면 true
+
+      // OR (이름이 TOM이거나 성인이면 통과)
+
+      // const name = "mike";
+      // const age = 30;
+
+      // if (name === "TOM" || age > 19) {
+      //   console.log("통과");
+      // }
+
+      // AND (이름이 mike이고 성인이면 통과)
+
+      // const name1 = "mike";
+      // const age1 = 30;
+
+      // if (name1 === "mike" && age1 > 19) {
+      //   console.log("통과");
+      // } else {
+      //   console.log("꺼져");
+      // }
+
+      // NOT ( 나이를 입력받아 성인이 아니면 꺼져)
+
+      // const age2 = prompt("나이 입력해봐");
+      // const isAdult = age2 > 19;
+
+      // if (!isAdult) {
+      //   console.log("꺼져!");
+      // } else {
+      //   console.log("성인입니다.");
+      // }
+
+      // 논리 연산자의 우선순위
+      // 1. AND 연산자
+      // 2. OR 연산자
+
+      // 남자이고 이름이 mike이거나 성인이면 통과
+
+      const gender = "M";
+      const name2 = "jane";
+      const isAdult2 = true;
+
+      if ( gender === "M" && ( name2 === "mike" || isAdult2 ) ){
+      console.log("통과");
+      } else {
+        console.log("꺼져");
+      }
+    </script>
+  </body>
+</html>
