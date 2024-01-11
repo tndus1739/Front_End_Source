@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 형변환
+
+      // 자동 형변환
+      // 명시적 형변환
+
+      // String() -> 문자형으로 변환
+      // Number() -> 숫자형으로 변환 (숫자가 아닌 문자가 포함되어 있다면 -> NaN 이 됨)
+      // Boolean() -> 불린형으로 변환
+
+      // 수학점수와 영어점수의 평균을 구하는 프로그램
+      // const mathScore = prompt("수학점수?");
+      // const engScore = prompt("영어점수?");
+      // const result = (mathScore + engScore) / 2;
+
+      // console.log(result);
+
+      // prompt로 입력받은 값은 무조건 문자형 ★
+      // 나누기 같은 표현식은 숫자형으로 자동 형 변환 (주의)
+      // "6"/ "2" = 3 ( 자동 형변환 )
+
+      // 명시적 형변환 : 의도를 가지고 형변환
+
+      console.log(    // 여러가지 값들을 한 번에 출력가능
+        String(3),
+        String(true),
+        String(false),
+        String(null),
+        String(undefined)
+      ); 
+
+      console.log( //
+      Number(3),
+      Number(0),
+      Number("문자"),  // NaN
+      Number(true),   // 1
+      Number(false),  // 0
+      Number(null),
+      Number(undefined)
+      );
+
+      // Boolean() 형으로의 변환
+      // false의 경우만 기억할 것 (아래의 경우 이외에는 모두 true를 반환)
+      // 숫자 0
+      // 빈 문자열 ""
+      // null
+      // underfined
+      // NaN 
+
+      // ★ 주의 사항
+      Number(null); // 0
+      Number(undefined); // NaN
+      
+      Number(0); // false
+      Number('0'); //true
+      Number(''); //fal
+      Number(' '); //true
+
+      console.log(
+        Boolean(1),
+        Boolean(123),
+        Boolean("javascript")
+      )
+
+      console.log( //
+      Boolean(0),
+      Boolean(""),      
+      Boolean(null),
+      Boolean(undefined),
+      Boolean(NaN)
+      );
+
+    </script>
+  </body>
+</html>

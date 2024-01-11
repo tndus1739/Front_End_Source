@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      // 알림창
+      // alert , prompt , confirm 
+
+
+      // alert : 사용자에게 알림을 알려줌 ( 확인버튼만 있음)
+      alert("Hello World!");
+
+      // prompt :  사용자에게 값을 입력받음
+      // const  name = prompt("이름을 입력하세요");
+      alert("환영합니다. " + name+"님");
+
+      const name = prompt("이름을 입력하세요");
+      alert(`안녕하세요, ${name}님 환영합니다.`);
+
+      // 만약에 이름에 아무 입력도 안하고 취소를 누른다면 -> null값이 들어옴
+      console.log(name);
+
+      // prompt() 는 default 값도 입력이 가능하다. (prompt는 2개의 인수를 받을 수 있다.)
+      const date = prompt("예약일을 입력해주세요", "2023-01-");
+      console.log(date);
+
+      // confirm : 사용자에게 확인 받을 때 사용 
+      // (alert과의 차이점 -> alert: 확인버튼만 있음 / confirm : 확인, 최소버튼이 둘 다 있음)
+      const isAdult = confirm("당신은 성인입니까?");
+      // 확인 : true  취소 : false
+      console.log(isAdult);
+    </script>
+  </body>
+</html>

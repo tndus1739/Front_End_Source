@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let name ="mike";
+    console.log(name);
+
+    const x = 1/0;
+    console.log(x);  // 1을 0으로 나누면 무한대를 얻을 수 있음
+
+    const y = name/2;
+    console.log(y);  // NaN : Not a number (숫자가 아니다.)
+
+    // Boolen
+    const a = true; //참
+    const b = false; //거짓
+    
+    const m = "nana";
+    const age = 30;
+    
+    console.log(m == "nana");     // true
+    console.log(age > 40);        // false : age 가 40 보다 작으니까 false
+
+    // null: 값이 존재하지 않는 것
+    let user = null;
+    console.log(user); 
+    // undefined : 값이 할당되지 않은 것
+    let bb ; // 변수를 선언만 하고 값을 할당하지 않음
+    console.log(bb); 
+
+    // typeof 연산자 : 변수의 자료형을 알아냄
+    const name2 = "meme";
+    console.log(typeof 3); 
+    console.log(typeof name2); 
+    console.log(typeof true); 
+    console.log(typeof "xxx"); 
+    console.log(typeof null);    // object형 (객체형) -> 하지만 null은 객체가 아님(?)
+    console.log(typeof underfined); 
+
+    // 문자와 문자 더하기
+    const aaa = "노수연";
+    const bbb = "나는 ";
+    const ccc = " 입니다.";
+    console.log(bbb + aaa + ccc);
+
+    // 숫자와 문자더하기 : 이때는 숫자가 문자형으로 변경되어 버림
+    const ageage = 60;
+    console.log(bbb + ageage + "살"+ ccc);
+
+  </script>
+</body>
+</html>
