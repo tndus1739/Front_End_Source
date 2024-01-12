@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .row {
+        width: 420px;
+        /* 중앙정렬 */
+        margin: 0 auto;
+      }
+
+      .row li {
+        display: inline;
+      }
+
+      .row ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      #lightbox {
+        /* 화면전체 : 클릭시 범위를 설정*/
+
+        /* fixed : 자신의 자리를 없앰 , 스크롤과 관계없이 고정위치 */
+        border: 1px solid palevioletred;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        /* 투명도를 설정해서 배경이 보이도록 처리 */
+        background: linear-gradient(
+          360deg,
+          rgba(5, 5, 5, 0.8),
+          rgba(69, 45, 91, 0.7)
+        );
+
+        top: 0px;
+        left: 0px;
+
+        /* 처음 로딩시 보이지 않도록 설정 */
+        display: none;
+      }
+
+      #lightbox img {
+        /* 자신의 자리를 없앰 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border: 10px solid rgb(254, 216, 216);
+        border-radius: 30px;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 작은 이미지 출력 부분 -->
+    <div class="row">
+      <ul>
+        <li>
+          <img
+            src="images/tree-1-thumb.jpg"
+            data-src="images/tree-1.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[0]-->
+        <li>
+          <img
+            src="images/tree-2-thumb.jpg"
+            data-src="images/tree-2.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[1]-->
+        <li>
+          <img
+            src="images/tree-3-thumb.jpg"
+            data-src="images/tree-3.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[2]-->
+        <li>
+          <img
+            src="images/tree-4-thumb.jpg"
+            data-src="images/tree-4.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[3]-->
+        <li>
+          <img
+            src="images/tree-5-thumb.jpg"
+            data-src="images/tree-5.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[4]-->
+        <li>
+          <img
+            src="images/tree-6-thumb.jpg"
+            data-src="images/tree-6.jpg"
+            class="pic"
+            alt=""
+          />
+        </li>
+        <!--pics[5]-->
+      </ul>
+    </div>
+    <!-- 작은 이미지 클릭시 큰이미지 출력블락 -->
+    <div id="lightbox">
+      <img src="images/tree-1.jpg" id="lightboxImage" alt="" />
+    </div>
+    <script>
+      // 객체 선언 , pics[0] , pics[1] , pics[2] , pics[3] , pics[4], pics[5]
+      let pics = document.getElementsByClassName("pic"); // pic 객체들  gethering
+      let lightbox = document.getElementById("lightbox");
+      let lightboxImage = document.getElementById("lightboxImage");
+
+      // 작은 이미지에 리스너를 장착해서  showLightbox() 함수를 호출
+      for (let i = 0; i < pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);  // 각 방  pics[i]을 호출할 때마다 함수 showLightbox 호출
+      }
+
+      // 함수 : 작은 이미지를 출력시 큰이미지를 출력하는 함수
+
+      function showLightbox() {
+        // bigLocation : 원본이미지 이름을 저장
+        let bigLocation = this.getAttribute("data-src"); // ( this : 클릭하는 <li>)
+        lightboxImage.setAttribute("src", bigLocation);
+
+        // lightbox의 화면을 출력
+        lightbox.style.display = "block";
+      }
+
+      // 큰이미지를 화면에 출력 후 클릭시 보이지 않도록 하는 함수
+      lightbox.onclick = function(){
+        lightbox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
