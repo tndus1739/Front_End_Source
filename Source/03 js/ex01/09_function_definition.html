@@ -11,7 +11,7 @@
         // 함수 선언전 호출 
         f1(); 
 
-       // 기본 함수 선언 : 호출 
+       // 기본 함수 선언 : 호출   // 함수 호출안라면 작동을 안함 (returm 해도 되고 안해도 됨)
         function f1 () {
             document.write("<p>기본 함수 선언<p> ");
         }
@@ -23,7 +23,7 @@
         // f2(); 
         //무명 함수  :   함수 호출시 함수 선언 이후에 호출 
             // var , let, const 
-        const f2 = function () {
+        const f2 = function () {    // function뒤의 이름이 const 뒤로 감
             document.write ("<p>=============<p>") ; 
             document.write("무명 함수 <p>"); 
         }

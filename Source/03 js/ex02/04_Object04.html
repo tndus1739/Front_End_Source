@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #carname {
+        width: 400px;
+        background-color: palevioletred;
+      }
+      #carcolor {
+        width: 400px;
+        background-color: rgb(255, 245, 203);
+      }
+      #carspeed {
+        width: 400px;
+        background-color: palegreen;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h2>객체 사용하기 : 필드 + 메소드</h2>
+    <hr />
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <script>
+
+      // car 객체 : 필드 (속성) + 함수
+      var car = {
+        name: "Sonata",
+        speed: 50,
+        color: "white",
+        start: function () {
+          return this.speed + 10;
+        },
+      };
+      var cname = document.getElementById("carname");
+      cname.textContent = car.name;
+      var colname = document.getElementById("carcolor");
+      colname.textContent = car.color;
+      var cspeed = document.getElementById("carspeed");
+      cspeed.textContent = car.start();
+    </script>
+  </body>
+</html>

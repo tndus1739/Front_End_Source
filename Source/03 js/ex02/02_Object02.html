@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        border: 1px solid palevioletred;
+        padding: 10px;
+        width: 400px;
+      }
+    </style>
+    <script>
+      // script 위치 중요함  ( 태그 블락이 들어가고 나서 id값이 로드되고 나서 body에 scropt블럭이 나와야함)
+      function car() {
+        var car = { name: "Sonata", speed: 100, color: "white" };
+        document.getElementById("var1").innerHTML =
+          "자동차 이름 : " + car["name"]; // document (이 html문서)
+        document.getElementById("var2").innerHTML =
+          "자동차 속도 : " + car.speed;
+        document.getElementById("var3").innerHTML =
+          "자동차 색상 : " + car.color;
+      }
+    </script>
+  </head>
+  <body>
+    
+
+    <p id="var1"></p>
+    <p id="var2"></p>
+    <p id="var3"></p>
+
+    <script>
+
+      car()
+    </script>
+
+  </body>
+</html>
