@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        // jquery 블락
+        $("button.add").click(function () {
+          $("h1, h2, p").addClass("blue"); // add class : class 선택자 추가
+          $("div").addClass("important");
+        });
+        $("button.remove").click(function () {
+          $("h1, h2, p").removeClass("blue");
+          $("div").removeClass("important");
+        });
+      });
+    </script>
+
+    <style>
+      .important {
+        /* 선언만 되어있고 태그 블락안에 important , blue 가 없다 */
+        font-weight: bold;
+        font-size: xx-large;
+      }
+      .blue {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML5</h1>
+    <h2>CSS3</h2>
+    <p>자바스크립트</p>
+    <div>제이쿼리</div>
+    <br />
+    <button class="add">CSS 적용</button>
+    <button class="remove">CSS 적용 해제</button>
+  </body>
+</html>
