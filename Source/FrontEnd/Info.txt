@@ -1,0 +1,392 @@
+블록 태그 : 
+	- 라인의 끝까지 적용되고, 엔터가 적용됨 
+	- 블록 태그 내부에는 인라인 태그가 올 수 있다. 
+	- 블록 태그 배부에 다른 블록 태그가 올 수도 있고 그렇지 않을 수도 있다.
+	- <div>, <table>, <h1> ~ <h6> , <p>, <form>, <ol><li>, <ul>, dl, dt,dd pre .... 블락 태그 
+	- hr
+	- header, section, nav, aside, footer    : 페이지의 레이 아웃을 잡는 태그  <== 시멘트릭 태그 
+	- 기본 width 가 100% 
+	- 기본 height 가 auto  <== 내용물에 따라 맞추어서 적용됨. 
+	- width , height 를 지정 할 수 있다. 
+	- 페이지 레이아웃 잡을때 사용됨 
+	- margin , padding  <== 4가지 방향으로 적용됨 (위,오른쪽, 아랫쪽, 왼쪽)
+
+인라인 태그 :
+	- 태그가 붙어서 출력  
+	- 인라인 태그 내부에는 블록 태그를 넣을 수 없다. 
+	- span, a , br, em, strong, input, label, img  
+	- 기본으로  width : auto, height : auto
+	- width, height 를 지정 할 수 없다. 
+	- margin, padding <= 왼쪽 , 오른쪽 만 적용됨   ( 위아래는 적용 안됨 )
+
+
+인라인 블락 : 
+	- 블락 ==> 인라인 , 인라인 => 블락 , (블락, 인라인) => 인라인 블락 
+	- display : inline-block ; 로 정의 되었을 때 
+
+	- 인라인 요소 처럼 너비와 높이가 내부 컨텐츠 만큼 적용됨 . width : auto, height : auto 
+	- width , height 의 크기를 지정 할 수 있음.  (블락의 특징)
+	- margin, padding 을 4방향으로 모두 지정 할 수 있음. (블락의 특징)
+
+
+태그 내부의 속성 : 
+     id = "값"		#값 { 스타일 } 	<== 페이지에서 값이 고유값
+     class = "값"		.값 { 스타일 } 	<== 페이지에서 중복 적용 
+
+
+==========================================================
+CSS 적용 방법 
+  - 내부 스타일  : 그 페이지에서만 적용 
+  - 외부 스타일  : 여러 페이지에서 불러 와서 사용 가능 , 여러 페이지 에서 공통으로 사용되는 스타일 
+  - 인라인 스타일 : 태그 내부에 스타일을 적용 , 
+
+=============================================================
+선택자 : 스타일을 적용할 대상 
+   - type(태그) 선택자  : 태그를 불러와서 스타일을 적용  <=== 
+		- 스타일을 적용한 태그가 이후에 추가될 경우 고려 해야함. 
+   - id 선택자 : 태그 내부 속성에 <div id = "값" >   </div> 
+        - #값 으로 불러 들임. 
+		- 페이지 내부에서 값은 중복되지 않도록 설정 
+		- 하나에만 고유하게 적용됨. 
+   - class 선택자 : 태그 내부 속성 <div class = "값" "값">  </div> 
+		- .값 으로 불러 들임 
+		- 값이 페이지 내에서 동일하게 적용 할 수 있다. 
+		- 여러 태그에 한꺼번에 스타일을 적용할때 사용됨. 
+   - 전체 선택자 : * , body 블락의 모든 태그를 선택 
+		- 개발시 초기 세팅을 할때 사용함. 
+		- * { margin : 0 ; padding : 0 }
+   - 하위 선택자 : 블락 하위의 태그를 선택 
+        - 부모태그  하위태그 {      }
+		- 공백이  하위 선택자 
+	- 자식 선택자 : 직계 자식을 뜻함.
+	    - 부모태그 > 직계자식 {      }
+		-  >  
+	- 인접 선택자 : 태그에 형제 레벨로 인접한 선택자 
+		- 형제태그 + 인접태그 {    }
+		-  + 
+	- 형제 선택자 : 같은 형제 레벨에 존재하는 선택자 
+	    - 형제태크 ~ 형제태그 {       }
+		- ~ 
+	- 그룹 선택자 : 여러 태그에 한꺼번에 스타일이 적용됨 
+		-  태그1, 태그2, 태그3 {       }
+
+	- 속성 선택자 : 태그의 해당 속성이 적용된 태그만 선택됨 
+		- 태그[속성] {    }
+	- 가상클래스 선택자 : 태그의 액션을 선택 
+		- a:hover {      }
+
+https://studiomeal.com/archives/197 
+    IE 브라우져에서는 지원안됨  ----> Flex  
+    - IE  ==> 엣지 
+
+    -- float :   블락 ==> 인라인 
+	-- width 가 지정 되어야 하위 블락이 비어있는 공간으로 올라옴
+	-- margin , padding 을 사용해서 박스의 공간을 처리 
+	-- clear 를 반드시 사용 : 사용후
+	-- 형제 레벨에서 float 속성을 적용 
+ 
+    -- Flex : 블락의 width 를 지정 하지 않더라도 자동으로  처리됨 
+	-- margin, padding 을 사용하지 않고 자동으로 처리 
+	-- 부모 레벨에서 처리됨. 
+	-- 형제 레벨에서 처리됨
+
+-- 태그<div> , 엘리멘트(박스)   : <div> </div> 
+positon :  엘리멘트(박스)의 위치를 조정 : left, top, right , bottom  
+    - relative 	: 자기 자신의 원본 위치를 기준점 , 자신의 블락이 없어지지 않음. 
+
+    - absolute	: 
+		기본적으로 부모의 position 설정이 없는 경우 : 
+			body ( ) 를 기준점으로 설정, 자신의 블락이 없어짐. 
+		- 부모 relative & 자식 absolute ( 부모의 position 의 값이 있는 경우? ) 
+		     - parent 를 기준점으로 설정됨 
+		- 조상 relative & 자식 absolute ( 조상의 position의 값이 있는 경우 ?) 
+		     조상을 기준점으로 잡는다. 
+		- 조상 position 없음 & 자식 absolute 
+		      - view port를 기준 점으로 잡는다.  body ( left 0 , right 0) 
+			 
+    - fixed 	: 뷰 포트(pc, 테블릿, 모바일)  를 기준점으로 잡는다.  , 
+	-- body 의 왼쪽 최상단 ( left 0px, top 0px) 
+	--  스크롤을 이동하더라도 항상 고정 위치에 있음. 
+	-- 자신의 블락이 없어짐. body 가 기준점 
+
+
+z-index : 박스의 레이어를 적용해서 박스의 우선 순위 결정 .  21억
+    - 값이 낮을 수록 아래에 적용됨 
+    - 값이 높을 수록 위에 적용됨 
+
+    - 10 , 20, 30, 
+    -  100, 200, 300 ........
+
+투명도 설정 : opacity 
+   - opacity : 1.0   <=== 완정 불투명 
+   - opacity : 0.5   <===  투명도 : 50% 
+   - opacity : 0.0   <=== 완전 투명  
+
+
+
+   css 충돌 되는 경우 
+	-- 상속 누적 적용됨 
+	-- 어떤 항목은 충돌이 발생 될수 있다. (동일한 항목 적용한 경우) 
+	-- 동일한 레벨에서는 마지막에 설정한 것이 적용됨. 
+	--  !important; 		<== 가장 강력 하게 적용 ,  꼭 필요한 곳에만 사용, 남발 금지. 
+
+	-- 실무에서는 !important , 인라인에 직접 스타일 넣는 것을 피해야됨 
+
+
+   외부 파일 < 내부 적용 < 태그내부(인라인 스타일) 에 적용
+
+   선택자에 따라서 충돌 발생시 우선순위 :    * (전체) , 태그, class , id , 인라인(태그내부) 
+	*  <   태그  <  class    <  id    <  인라인(태그내부)     <   !important ; 
+
+Front End : 뷰 (화면에 출력), 사용자에게 보여지는 부분 
+   - HTML (뼈대) , CSS (인테리어) , JavaScript (이크마스크립트6) , <== 핵심 기술 
+
+   - JQuery : 자바스크립트 라이브러리 
+   -  리엑트 : FaceBook 에서 만든 SPA 를 위한 JavaScript 라이브러리 
+	- 클라이언트에서 서버의 값을 JSON 형식으로 받아와서 , client 에서 랜더링 (태그 생성)  <== CSR 
+   - 뷰, 앵귤러(구글) (x)     <=== 
+
+BackEnd : 비즈니스 로직 처리 , DataBase (Oracle, MySQL, MariaDB, .....) , 
+	MVC  : 협업 가능, 유지 쉽다.  , 
+		Client ==>  Controller   ==> DTO   ==> DAO  ==> DB     
+
+	<== SSR (서버 사이드 랜더링 ) 
+     - JSP 	: html + java 	,    *.jsp		<== 톰켓(WAS) : Server 에서 Java 코드를 랜더링(태그) 해서 클라이언트에게 전송,  	
+     - PHP : html + c
+     - .net 
+     - Thymeleaf 	<== spring boot 
+   ===============프레임워크 (틀)  : 자동기술이 녹아있음. ==========================================
+	srping boot : java 기반의 백엔드 프레임워크 	<== 국내 프로잭트 대부분 
+	node.js   : JavaScript 기반의 백엔드 프레임워크 
+	Django  : phyon 기반의 백엔드 프레임워크 
+
+    
+라이브러리 vs 프레임워크 (틀) 
+    - 라이브러리 : Linux 	<== 뭐든지 내가 다 구현 할 수 있다. , 구현하기 위해서는 손이 많이 간다. 
+		- 자신이 주가 되어서 뭐든지 구현 할 수 있다. 
+    - 프레임워크 : MAC  	<== 모든 것이 구현되어있다. 틀을 벗어나기 힘들다. 
+		- 구현되어있는 틀 내부에서 구현, 
+
+
+
+1월 15일 : -  개인 프로잭트 ppt , 
+	 - AWS 계정 생성 하기 (EC2) - 신용카드 등록    <== 무료 (1년) , 프리 티어
+ 	 - aws ec2 계정 생성	<== 
+
+	https://aws.amazon.com/ko/free/	<== AWS 계정 생성, 신용카드
+	https://sujinisacat.tistory.com/12	<== 블로그 
+
+https://lrl.kr/wmAs	  <== 업로드[ ppt ]   
+https://aws.amazon.com/
+
+cloud  서비스 : 인터넷에서 서버를 구매 , 
+   - AWS : Amazone 	1위
+   - Azure : Microsoft 	2위
+   - GCP : Google 		3위 
+
+https://code.jquery.com/jquery-3.7.1.min.js
+
+https://getbootstrap.kr/	<== 부트 스트랩 
+https://www.startbootstrap.com/	<== 부트스트랩 무료 템플릿 사이트 
+
+
+https://aws.amazon.com/
+
+VM (서버) 
+  - Windws Server 2019, 2022 
+  - Linux ( Ubuntu , CentOS (Locky Linux))
+
+AWS 프리티어 : 12달 동안 무료 
+AWS 리젼 : 전 세계의 DataCenter 의 위치 (서울)
+
+Cloud Service : AWS 약 140개 정도의 서비스 
+   - IaaS : AWS EC2 ( VM )
+   - PaaS : AWS RDS 
+   - SaaS : M365 (office)
+
+
+인스턴스 (VM) 만들기 
+  1. 이름 			: WS2022
+  2. OS Image 		: Windows Server 2022 base (프리티어)
+  3. 인스턴스 유형   : t2.micro  : cpu 1, ram : 1GB (프리티어)
+  4. 키 페어(로그인)	:  로그인시 사용. 암호화 파일을 다운 
+		- 이름 : WS2022-key
+		- 암호화 유형 : RSA 
+		- 파일 확장자 : pem 
+  5. 네트워크 설정
+	1. VPC : 기본값 : 172.31.0.0 / 16 
+	2. 서브넷 : 가용영역 : ap-northeast-2a : 172.31.0.0 / 20 
+	3. 퍼블릭 IP : 활성화 <== 공인 IP 할당됨 
+	4. 보안그룹 생성  (AWS 의 방화벽)
+
+   6. 고급 네트워크 설정 : 기본 IP : 172.31.0.100 
+
+    7. 스토리지 구성 
+		30GB		<==== 프리티어 (무료)
+	
+	<인스턴스 생성> 
+
+	8. 원격 서버에 접속 
+	  1. 인스턴스 클릭 ==> 연결 (상단) ==> RDP 클라이언트 (클릭) 
+	  	  ==> 원격 데스크톰 파일 다운로드 ==> 암호 가져오기 (클릭) , *.pem
+		  ==> 해독 하기 
+	   
+-- OpenSSH 가 설치 , 방화벽 : TCP 22 번 오픈 
+-- JDK 설치 (JDK 17), 톰켓 설치 ( Tomcat10.1 )
+-- local 에서 개발 된 내용을 배포 (*.war ) ==> 서버의 톰겟에 업로드 
+-- SFTP를 사용해서 local 의 배포된 (*.war ) == 서버로 전송 
+
+-- Oraclea DB 설치       <== 
+-- 로컬의 파일을 서버로 업로드 
+
+Windows Server 2022 에 OpenSSH 설치 
+<== PowerShell (관리자 모드로)
+==========================================================
+[1] Run PowerShell with Admin Privilege and Configure SSH Server.
+# get available name of OpenSSH
+PS C:\Users\Administrator> Get-WindowsCapability -Online | ? Name -like 'OpenSSH*' 
+
+Name  : OpenSSH.Client~~~~0.0.1.0
+State : Installed
+
+Name  : OpenSSH.Server~~~~0.0.1.0
+State : NotPresent
+
+# install OpenSSH Server
+PS C:\Users\Administrator> Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0 
+
+Path          :
+Online        : True
+RestartNeeded : False
+
+# Reboot 
+PS C:\Users\Administrator>Restart-computer -Force 
+
+
+# start sshd service
+PS C:\Users\Administrator> Start-Service -Name "sshd" 
+
+# set [Automatic] for Startup
+PS C:\Users\Administrator> Set-Service -Name "sshd" -StartupType Automatic 
+
+# verify settings
+PS C:\Users\Administrator> Get-Service -Name "sshd" | Select-Object * 
+
+Name                : sshd
+RequiredServices    : {}
+CanPauseAndContinue : False
+CanShutdown         : False
+CanStop             : True
+DisplayName         : OpenSSH SSH Server
+DependentServices   : {}
+MachineName         : .
+ServiceName         : sshd
+ServicesDependedOn  : {}
+ServiceHandle       : SafeServiceHandle
+Status              : Running
+ServiceType         : Win32OwnProcess
+StartType           : Automatic
+Site                :
+Container           :
+
+
+# if Windows Firewall is running, allow 22/TCP
+# however, 22/TCP is generally allowed by OpenSSH installer, so it does not need to do the follows manually
+PS C:\Users\Administrator> New-NetFirewallRule -Name "SSH" `
+-DisplayName "SSH" `
+-Description "Allow SSH" `
+-Profile Any `
+-Direction Inbound `
+-Action Allow `
+-Protocol TCP `
+-Program Any `
+-LocalAddress Any `
+-RemoteAddress Any `
+-LocalPort 22 `
+-RemotePort Any 
+
+
+
+Name                          : SSH
+DisplayName                   : SSH
+Description                   : Allow SSH
+DisplayGroup                  :
+Group                         :
+Enabled                       : True
+Profile                       : Any
+Platform                      : {}
+Direction                     : Inbound
+Action                        : Allow
+EdgeTraversalPolicy           : Block
+LooseSourceMapping            : False
+LocalOnlyMapping              : False
+Owner                         :
+PrimaryStatus                 : OK
+Status                        : The rule was parsed successfully from the store. (65536)
+EnforcementStatus             : NotApplicable
+PolicyStoreSource             : PersistentStore
+PolicyStoreSourceType         : Local
+RemoteDynamicKeywordAddresses : {}
+
+==================================================
+=============================
+
+1. OpenSSH Server 설치, 서비스 시작, 부팅시 자동으로 서비스 시작 
+2. AWS의 TCP 22 포트의 방화벽 오픈 
+    - 해당 인스턴스 클릭 ==> 보안 (클릭) => 보안 그룹 (클릭)
+    - 인바운드 규칙 : 
+		- SSH 서비스 등록 : TCP 22 , Anyware IPv4 
+		- HTTP 			 : TCP 80, Anyware IPv4
+		- HTTPS 		 : TCP 443 , Anyware IPv4
+		- Oracle-RDP 	 : TCP 1521 , Anyware IPv4
+		- My-SQL 		 : TCP 3306 , Anyware IPv4
+		- MS-SQL		 : TCP 1433 , Anyware IPv4
+
+3. File-Zilla 에서 local의 JDK 17, Tomcat10.1 을 서버로 전송 ( SFTP ) 
+
+4. JDK 17 설치 
+5. Tomcat 10.1 설치  :   TCP 80 포트로 설치 
+	- PowerShell (관리자 모드)
+	- 서비스 시작 				: Start-Service -Name "Tomcat10"
+	- 서비스 중지 				: Stop-Service -Name "Tomcat10"
+	- 서비스 다시시작           : Restart-Service -Name "Tomcat10"
+    - 서비스 부팅시 자동 시작 	 : Set-Service -Name "Tomcat10" -StartupType Automatic
+	- 서비스 상태 보기  		 : Get-Service -Name "Tomcat10" | Select-Object *
+
+	- AWS 방화벽 : TCP 80 
+	- Windows Server 의 방화벽 오픈(wf.msc) : TCP 80 
+
+6. JSP 로 개발된 프로잭트를 배포 
+    - WAR - 외장 톰켓에 배포, JSP 
+	- JAR - 내부에 톰겟이 내장 , Spring Boot 
+
+    이클립스 ==> 프로잭트 (오른쪽클릭) ==> export ==> war file 
+	프로잭트명.war    <== 프로잭트 배포 파일 
+
+	서버의 Tomcat10.1 설치된 폴더의 webbapp 폴더에 넣어줌. 
+	Tomcat 서비스를 다시시작 
+
+
+=======================================================
+AWS : WS2012_VM 
+	  인스턴스 유형 : t2 micro 
+	  VM 의 사설 IP : 172.31.0.200
+	  public IP : 활성화 
+
+	  SSH - Server 설치 
+	  JDK 17, Tomcat10.1 
+
+	  local 의 프로잭트 : mall
+		war 배포 
+	  
+	  원격 공인 IP  : 프로잭트 출력 
+
+
+
+
+
+
+
+
+
+
